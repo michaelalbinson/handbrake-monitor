@@ -47,8 +47,11 @@ class FileReader {
 			rl.on('line', line => {
 				lastLine = line;
 				const encodeStartedIdx = line.indexOf(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED);
-				if (encodeStartedIdx >= 0)
+				if (encodeStartedIdx >= 0) {
 					currentEncode = line.slice(encodeStartedIdx + RIP_PROGRESS_CONSTANTS.ENCODE_STARTED.length);
+					if (currentEncode.endsWith('.m4v') || currentEncode.endsWith('.mp4'))
+						currentEncode = currentEncode.replace('.m4v', '').replace('.mp4', '');
+				}
 			});
 
 			rl.on('error', reject)
