@@ -7,21 +7,27 @@
         <td>Status</td>
         <td>Status String</td>
         <td>Current Encode</td>
+        <td>Start Time</td>
+        <td>End Time</td>
     </tr>
     </thead>
     <tbody>
         <tr>
             <td>{{host}}</td>
             <td><span class="{{status}}"></span></td>
-            <td>{{status}}</td>
+            <td>{{statusText}}</td>
             <td>{{currentEncode}}</td>
+            <td>{{startTime}}</td>
+            <td>{{endTime}}</td>
         </tr>
         {{#each peerStatuses}}
             <tr>
                 <td>[PEER] - {{this.hostname}}</td>
                 <td><span class="{{this.status}}"></span></td>
-                <td>{{this.status}}</td>
+                <td>{{this.statusText}}</td>
                 <td>{{this.currentEncode}}</td>
+                <td>{{this.startTime}}</td>
+                <td>{{this.endTime}}</td>
             </tr>
         {{/each}}
     </tbody>

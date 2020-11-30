@@ -18,6 +18,9 @@ module.exports = app => {
 				title: '🍹 | Dashboard',
 				host: HOST_NAME,
 				status: hostStatus.status,
+				statusText: hostStatus.statusText,
+				startTime: hostStatus.startTime,
+				endTime: hostStatus.endTime,
 				currentEncode: hostStatus.currentEncode,
 				peerStatuses
 			});
@@ -32,6 +35,9 @@ module.exports = app => {
 			res.send({
 				success: true,
 				status: status.status,
+				statusText: status.statusText,
+				startTime: status.startTime,
+				endTime: status.endTime,
 				currentEncode: status.currentEncode,
 				hostname: HOST_NAME
 			});
