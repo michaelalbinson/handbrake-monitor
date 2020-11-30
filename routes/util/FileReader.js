@@ -3,6 +3,7 @@
 const path = require('path');
 const fs = require('fs');
 const readline = require('readline');
+const Stream = require('stream');
 
 const { HBQueueStatus, STATUS} = require('./HBStatus');
 const config = require('../../config/properties.json');
@@ -28,7 +29,7 @@ class FileReader {
 	static readLastLine(filePath) {
 		let inStream = fs.createReadStream(filePath);
 		return new Promise((resolve, reject)=> {
-			let rl = readline.createInterface(inStream, process.stdout);
+			let rl = readline.createInterface(inStream, new Stream());
 
 			let lastLine = '';
 			rl.on('line', line => {
