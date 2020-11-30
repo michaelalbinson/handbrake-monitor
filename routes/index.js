@@ -12,7 +12,7 @@ module.exports = app => {
 		let peerStatuses;
 		PeerFetcher.fetchPeerStatuses().then(peerS => {
 			peerStatuses = peerS;
-			return FileReader.getLastHBStatus();
+			return FileReader.getHBStatusItems();
 		}).then(hostStatus => {
 			res.render('index', {
 				title: '🍹 | Dashboard',

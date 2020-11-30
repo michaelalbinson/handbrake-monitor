@@ -12,15 +12,7 @@ const config = require('../../config/properties.json');
 class FileReader {
 	/**
 	 *
-	 * @returns {Promise<{currentEncode: *, startTime: *, endTime: *, status: *, statusText: *}>}
-	 */
-	static getLastHBStatus() {
-		return this.getHBStatusItems();
-	}
-
-	/**
-	 *
-	 * @returns {Promise<{lastLine: string, currentEncode: string, startTime: string}>}
+	 * @returns {Promise<{currentEncode: string, startTime: string, status: string, statusText: string}>}
 	 */
 	static getHBStatusItems() {
 		const hbPath = path.join(config.handbrakePath.replace('~', require('os').homedir()));
@@ -37,37 +29,32 @@ class FileReader {
 			};
 
 			rl.on('line', line => {
-				const encodeStartedIdx = line.indexOf(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED);
-				if (encodeStartedIdx >= 0) {
+				if (line.includes(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED)) {
+					const encodeStartedIdx = line.indexOf(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED);
 					stats.statusText = STATUS.RIPPING;
-					stats.endTime = undefined;
+					stats.endTime = '';
 					stats.startTime = line.slice(1, 9);
 					stats.currentEncode = line.slice(encodeStartedIdx + RIP_PROGRESS_CONSTANTS.ENCODE_STARTED.length);
 					if (stats.currentEncode.endsWith('.m4v') || stats.currentEncode.endsWith('.mp4'))
 						stats.currentEncode = stats.currentEncode.replace('.m4v', '').replace('.mp4', '');
-				}
-
-				if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_SCANNED_READY))
-					stats.status = STATUS.SCAN_COMPLETE;
-
-				if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_COMPLETE)) {
-					stats.status = STATUS.QUEUE_COMPLETE;
+				} else if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_SCANNED_READY)) {
+					stats.statusText = STATUS.SCAN_COMPLETE;
+					stats.startTime = '';
+					stats.endTime = '';
+				} else if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_COMPLETE)) {
+					stats.statusText = STATUS.QUEUE_COMPLETE;
 					stats.endTime = line.slice(1, 9);
+				} else if (line.includes(RIP_PROGRESS_CONSTANTS.SCAN_STARTED)) {
+					stats.statusText = STATUS.SCANNING;
+					stats.startTime = '';
+					stats.endTime = '';
 				}
-
-				if (line.includes(RIP_PROGRESS_CONSTANTS.SCAN_STARTED))
-					stats.status = STATUS.SCANNING;
 			});
 
 			rl.on('error', reject)
 
 			rl.on('close', () => {
 				stats.status = REVERSE_STATUS_LOOKUP[stats.statusText];
-
-				if (stats.status === STATUS.SCAN_COMPLETE) {
-					stats.startTime = undefined;
-					stats.endTime = undefined;
-				}
 
 				resolve(stats);
 			});
