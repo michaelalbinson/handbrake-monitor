@@ -1,12 +1,12 @@
 'use strict';
 
-
-const PORT = 9595;
-
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+
+const { serverPort } = require('./config/properties.json');
+
 
 const app = express();
 
@@ -21,8 +21,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 require('./routes')(app);
 
+const PORT = serverPort || 9595;
 console.log(`Server started on port ${PORT}`);
-
 app.listen(PORT);
 
 module.exports = app;
