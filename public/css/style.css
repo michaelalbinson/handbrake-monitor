@@ -33,7 +33,8 @@ tr td, tr th {
 .SCAN_COMPLETE::before,
 .QUEUE_COMPLETE::before,
 .PEER_UNAVAILABLE::before,
-.WORKING::before {
+.RIPPING::before,
+.SCANNING::before {
   content: '';
   display: inline-block;
   width: 1rem;
@@ -47,7 +48,8 @@ tr td, tr th {
   background-color: green;
 }
 
-.WORKING::before {
+.RIPPING::before,
+.SCANNING::before {
   background-color: yellow;
 }
 

@@ -6,13 +6,16 @@ const HB_QUEUE_STATUS_CONSTANTS = {
 }
 
 const RIP_PROGRESS_CONSTANTS = {
-	ENCODE_STARTED: "QueueCore started encoding "
+	ENCODE_STARTED: "QueueCore started encoding ",
+	ENCODE_ENDED: "QueueCore scan done",
+	SCAN_STARTED: 'ScanCore trying to open a physical disc at'
 };
 
 const STATUS = {
 	SCAN_COMPLETE: 'Scan Complete - Idle',
 	QUEUE_COMPLETE: 'Queue Complete - Idle',
-	WORKING: 'Working 🍹',
+	SCANNING: 'Scanning 📀',
+	RIPPING: 'Ripping 🍹',
 	PEER_UNAVAILABLE: '🚨 Peer Unavailable 🚨'
 }
 

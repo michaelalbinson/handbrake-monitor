@@ -21,6 +21,7 @@ module.exports = app => {
 				statusText: hostStatus.statusText,
 				startTime: hostStatus.startTime,
 				endTime: hostStatus.endTime,
+				activity: hostStatus.activity,
 				currentEncode: hostStatus.currentEncode,
 				peerStatuses
 			});
@@ -38,6 +39,7 @@ module.exports = app => {
 				statusText: status.statusText,
 				startTime: status.startTime,
 				endTime: status.endTime,
+				activity: status.activity,
 				currentEncode: status.currentEncode,
 				hostname: HOST_NAME
 			});

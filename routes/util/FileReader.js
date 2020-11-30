@@ -12,30 +12,10 @@ const config = require('../../config/properties.json');
 class FileReader {
 	/**
 	 *
-	 * @returns {Promise<{currentEncode: *, startTime: *, endTime: *, status: *}>}
+	 * @returns {Promise<{currentEncode: *, startTime: *, endTime: *, status: *, statusText: *}>}
 	 */
 	static getLastHBStatus() {
-		return this.getHBStatusItems().then(status => {
-			const statsOut = {
-				currentEncode: status.currentEncode,
-				startTime: status.startTime,
-				endTime: 'In Progress'
-			};
-
-			let sysStatus = STATUS.WORKING;
-			if (status.lastLine.includes(HB_QUEUE_STATUS_CONSTANTS.STATUS_QUEUE_SCANNED_READY)) {
-				sysStatus = STATUS.SCAN_COMPLETE;
-				statsOut.startTime = undefined;
-				statsOut.endTime = undefined;
-			} else if (status.lastLine.includes(HB_QUEUE_STATUS_CONSTANTS.STATUS_QUEUE_COMPLETE)) {
-				sysStatus = STATUS.QUEUE_COMPLETE;
-				statsOut.endTime = status.lastLine.slice(0, 9);
-			}
-
-			statsOut.statusText = sysStatus;
-			statsOut.status = REVERSE_STATUS_LOOKUP[sysStatus];
-			return statsOut;
-		});
+		return this.getHBStatusItems();
 	}
 
 	/**
@@ -50,25 +30,45 @@ class FileReader {
 			let rl = readline.createInterface(inStream, new Stream());
 
 			const stats = {
-				lastLine: '',
 				currentEncode: '',
-				startTime: ''
+				startTime: '',
+				endTime: '',
+				statusText: STATUS.QUEUE_COMPLETE
 			};
 
 			rl.on('line', line => {
-				stats.lastLine = line;
 				const encodeStartedIdx = line.indexOf(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED);
 				if (encodeStartedIdx >= 0) {
+					stats.statusText = STATUS.RIPPING;
+					stats.endTime = undefined;
 					stats.startTime = line.slice(1, 9);
 					stats.currentEncode = line.slice(encodeStartedIdx + RIP_PROGRESS_CONSTANTS.ENCODE_STARTED.length);
 					if (stats.currentEncode.endsWith('.m4v') || stats.currentEncode.endsWith('.mp4'))
 						stats.currentEncode = stats.currentEncode.replace('.m4v', '').replace('.mp4', '');
 				}
+
+				if (line.includes(HB_QUEUE_STATUS_CONSTANTS.STATUS_QUEUE_SCANNED_READY))
+					stats.status = STATUS.SCAN_COMPLETE;
+
+				if (line.includes(HB_QUEUE_STATUS_CONSTANTS.STATUS_QUEUE_COMPLETE)) {
+					stats.status = STATUS.QUEUE_COMPLETE;
+					stats.endTime = line.slice(1, 9);
+				}
+
+				if (line.includes(RIP_PROGRESS_CONSTANTS.SCAN_STARTED))
+					stats.status = STATUS.SCANNING;
 			});
 
 			rl.on('error', reject)
 
 			rl.on('close', () => {
+				stats.status = REVERSE_STATUS_LOOKUP[stats.statusText];
+
+				if (stats.status === STATUS.SCAN_COMPLETE) {
+					stats.startTime = undefined;
+					stats.endTime = undefined;
+				}
+
 				resolve(stats);
 			});
 		});
