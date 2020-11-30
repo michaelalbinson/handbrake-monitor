@@ -5,7 +5,7 @@ const fs = require('fs');
 const readline = require('readline');
 const Stream = require('stream');
 
-const { HB_QUEUE_STATUS_CONSTANTS, STATUS, RIP_PROGRESS_CONSTANTS, REVERSE_STATUS_LOOKUP } = require('./HBStatus');
+const { STATUS, RIP_PROGRESS_CONSTANTS, REVERSE_STATUS_LOOKUP } = require('./HBStatus');
 const config = require('../../config/properties.json');
 
 
@@ -47,10 +47,10 @@ class FileReader {
 						stats.currentEncode = stats.currentEncode.replace('.m4v', '').replace('.mp4', '');
 				}
 
-				if (line.includes(HB_QUEUE_STATUS_CONSTANTS.STATUS_QUEUE_SCANNED_READY))
+				if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_SCANNED_READY))
 					stats.status = STATUS.SCAN_COMPLETE;
 
-				if (line.includes(HB_QUEUE_STATUS_CONSTANTS.STATUS_QUEUE_COMPLETE)) {
+				if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_COMPLETE)) {
 					stats.status = STATUS.QUEUE_COMPLETE;
 					stats.endTime = line.slice(1, 9);
 				}
