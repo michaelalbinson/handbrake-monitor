@@ -6,6 +6,10 @@ body {
   color: azure;
 }
 
+hr {
+  border-color: white;
+}
+
 a {
   color: #00B7FF;
 }

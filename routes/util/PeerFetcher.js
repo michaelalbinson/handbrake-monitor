@@ -9,6 +9,7 @@ class PeerFetcher {
 		const responses = [];
 		const promises = config.peers.map(peerURL => {
 			const destinationURL = peerURL.includes('/checkup') ? peerURL : peerURL + '/checkup';
+			console.log('INFO: Request out to: ' + destinationURL);
 			return fetch(destinationURL)
 				.then(res => res.json())
 				.then(json => responses.push(json))

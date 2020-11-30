@@ -1,30 +1,28 @@
-<h1>Current HandBreak Status</h1>
+<h1>HandBreak Dashboard</h1>
 <hr />
-<p><span>{{host}}</span> - <span class="{{status}}">{{status}}</span></p>
-
-<br />
-<h3>Peer Status</h3>
-{{#if peerStatuses}}
-    <table>
-        <thead>
+<table>
+    <thead>
+    <tr>
+        <td>Host</td>
+        <td>Status</td>
+        <td>Status String</td>
+        <td>Current Encode</td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{host}}</td>
+            <td><span class="{{status}}"></span></td>
+            <td>{{status}}</td>
+            <td>{{currentEncode}}</td>
+        </tr>
+        {{#each peerStatuses}}
             <tr>
-                <td>Peer Name</td>
-                <td>Status</td>
-                <td>Status String</td>
+                <td>[PEER] - {{this.hostname}}</td>
+                <td><span class="{{this.status}}"></span></td>
+                <td>{{this.status}}</td>
+                <td>{{this.currentEncode}}</td>
             </tr>
-        </thead>
-        <tbody>
-            {{#each peerStatuses}}
-                <tr>
-                    <td>{{this.hostname}}</td>
-                    <td><span class="{{this.status}}"></span></td>
-                    <td>{{this.status}}</td>
-                </tr>
-            {{/each}}
-
-        </tbody>
-    </table>
-{{/if}}
-{{#unless peerStatuses}}
-    <p>No peer HandBreak monitors found.</p>
-{{/unless}}
+        {{/each}}
+    </tbody>
+</table>

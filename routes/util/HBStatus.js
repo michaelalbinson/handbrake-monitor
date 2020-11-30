@@ -1,9 +1,13 @@
 'use strict';
 
-class HBQueueStatus {
-	static STATUS_QUEUE_COMPLETE = "QueueCore work done";
-	static STATUS_QUEUE_SCANNED_READY = "ScanCore scan done";
+const HB_QUEUE_STATUS_CONSTANTS = {
+	STATUS_QUEUE_COMPLETE: "QueueCore work done",
+	STATUS_QUEUE_SCANNED_READY: "ScanCore scan done"
 }
+
+const RIP_PROGRESS_CONSTANTS = {
+	ENCODE_STARTED: "QueueCore started encoding "
+};
 
 const STATUS = {
 	SCAN_COMPLETE: 'SCAN_COMPLETE',
@@ -13,6 +17,7 @@ const STATUS = {
 }
 
 module.exports = {
-	HBQueueStatus,
-	STATUS
+	HB_QUEUE_STATUS_CONSTANTS,
+	STATUS,
+	RIP_PROGRESS_CONSTANTS
 };

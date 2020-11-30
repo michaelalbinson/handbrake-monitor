@@ -14,7 +14,13 @@ module.exports = app => {
 			peerStatuses = peerS;
 			return FileReader.getLastHBStatus();
 		}).then(hostStatus => {
-			res.render('index', { host: HOST_NAME, status: hostStatus, peerStatuses });
+			res.render('index', {
+				title: '🍹 | Dashboard',
+				host: HOST_NAME,
+				status: hostStatus.status,
+				currentEncode: hostStatus.currentEncode,
+				peerStatuses
+			});
 		}).catch(e => {
 			console.error(e);
 			res.render('error');
@@ -23,7 +29,12 @@ module.exports = app => {
 
 	app.get('/checkup', (req, res) => {
 		FileReader.getLastHBStatus().then(status => {
-			res.send({ success: true, status: status, hostname: HOST_NAME })
+			res.send({
+				success: true,
+				status: status.status,
+				currentEncode: status.currentEncode,
+				hostname: HOST_NAME
+			});
 		}).catch(e => {
 			console.error(e);
 			res.send({ success: false });
