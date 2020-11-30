@@ -22,7 +22,7 @@ class PeerFetcher {
 				});
 		});
 
-		return Promise.all(promises);
+		return Promise.all(promises).then(() => responses);
 	}
 }
 
