@@ -32,16 +32,16 @@ module.exports = app => {
 	});
 
 	app.get('/checkup', (req, res) => {
-		FileReader.getLastHBStatus().then(status => {
+		FileReader.getHBStatusItems().then(status => {
 			res.send({
 				success: true,
+				host: HOST_NAME,
 				status: status.status,
 				statusText: status.statusText,
 				startTime: status.startTime,
 				endTime: status.endTime,
 				activity: status.activity,
 				currentEncode: status.currentEncode,
-				hostname: HOST_NAME
 			});
 		}).catch(e => {
 			console.error(e);
