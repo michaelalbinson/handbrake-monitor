@@ -1,0 +1,30 @@
+<h1>Current HandBreak Status</h1>
+<hr />
+<p><span>{{host}}</span> - <span class="{{status}}">{{status}}</span></p>
+
+<br />
+<h3>Peer Status</h3>
+{{#if peerStatuses}}
+    <table>
+        <thead>
+            <tr>
+                <td>Peer Name</td>
+                <td>Status</td>
+                <td>Status String</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each peerStatuses}}
+                <tr>
+                    <td>{{this.hostname}}</td>
+                    <td><span class="{{this.status}}"></span></td>
+                    <td>{{this.status}}</td>
+                </tr>
+            {{/each}}
+
+        </tbody>
+    </table>
+{{/if}}
+{{#unless peerStatuses}}
+    <p>No peer HandBreak monitors found.</p>
+{{/unless}}
