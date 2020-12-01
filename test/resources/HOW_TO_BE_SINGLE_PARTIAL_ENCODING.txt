@@ -1,0 +1,149 @@
+[00:43:52] macgui: QueueCore started encoding How to be Single.m4v
+[00:43:52] macgui: QueueCore with preset Fast 1080p30
+[00:43:52] Starting work at: Fri Nov 27 00:43:52 2020
+
+[00:43:52] 1 job(s) to process
+[00:43:52] Starting Task: Subtitle Scan
+[00:43:52] job configuration:
+[00:43:52]  * source
+[00:43:52]    + /Volumes/HOW_TO_BE_SINGLE
+[00:43:52]    + title 1, chapter(s) 1 to 12
+[00:43:52]  * destination
+[00:43:52]    + /Users/michaelalbinson/Desktop/net-new/How to be Single.m4v
+[00:43:52]    + container: MPEG-4 (libavformat)
+[00:43:52]      + align initial A/V stream timestamps
+[00:43:52]      + chapter markers
+[00:43:52]  * video track
+[00:43:52]    + decoder: mpeg2video
+[00:43:52]      + bitrate 200 kbps
+[00:43:52]    + filters
+[00:43:52]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[00:43:52]      + Decomb (mode=39)
+[00:43:52]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[00:43:52]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[00:43:52]      + Crop and Scale (width=720:height=360:crop-top=58:crop-bottom=62:crop-left=0:crop-right=0)
+[00:43:52]        + source: 720 * 480, crop (58/62/0/0): 720 * 360, scale: 720 * 360
+[00:43:52]    + Output geometry
+[00:43:52]      + storage dimensions: 720 x 360
+[00:43:52]      + pixel aspect ratio: 32 : 27
+[00:43:52]      + display dimensions: 853 x 360
+[00:43:52]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[00:43:52]    + subtitle, English (Wide Screen) [VOBSUB] (track 0, id 0x20bd, Picture)
+[00:43:52]    + subtitle, English (Letterbox) [VOBSUB] (track 1, id 0x21bd, Picture)
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/HOW_TO_BE_SINGLE for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00f60000. Regions: 1 4
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000130
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x0000ac9f
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x0000ad7d
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x002f309b
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_03_1.VOB at 0x002f3e43
+libdvdread: Elapsed time 0
+libdvdread: Found 3 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/HOW_TO_BE_SINGLE for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00f60000. Regions: 1 4
+[00:43:54] sync: expecting 157825 video frames
+libdvdnav: Menu Languages available:
+libdvdnav: Menu Languages available:
+[01:08:57] reader: done. 2 scr changes
+[01:08:57] work: average encoding speed for job is 0.000000 fps
+[01:08:57] comb detect: heavy 0 | light 0 | uncombed 0 | total 0
+[01:08:57] decomb: deinterlaced 0 | blended 0 | unfiltered 0 | total 0
+[01:08:57] vfr: 0 frames output, 0 dropped and 0 duped for CFR/PFR
+[01:08:57] vfr: lost time: 0 (0 frames)
+[01:08:57] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[01:08:57] mpeg2video-decoder done: 0 frames, 1 decoder errors
+[01:08:57] sync: got 0 frames, 157825 expected
+[01:08:57] Subtitle track 0 (id 0x20bd) 'English (Wide Screen) [VOBSUB]': 2087 hits (0 forced)
+[01:08:57] Subtitle track 1 (id 0x21bd) 'English (Letterbox) [VOBSUB]': 2087 hits (0 forced)
+[01:08:57] No candidate detected during subtitle scan
+[01:08:57] Starting Task: Encoding Pass
+[01:08:57] job configuration:
+[01:08:57]  * source
+[01:08:57]    + /Volumes/HOW_TO_BE_SINGLE
+[01:08:57]    + title 1, chapter(s) 1 to 12
+[01:08:57]  * destination
+[01:08:57]    + /Users/michaelalbinson/Desktop/net-new/How to be Single.m4v
+[01:08:57]    + container: MPEG-4 (libavformat)
+[01:08:57]      + align initial A/V stream timestamps
+[01:08:57]      + chapter markers
+[01:08:57]  * video track
+[01:08:57]    + decoder: mpeg2video
+[01:08:57]      + bitrate 200 kbps
+[01:08:57]    + filters
+[01:08:57]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[01:08:57]      + Decomb (mode=39)
+[01:08:57]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[01:08:57]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[01:08:57]      + Crop and Scale (width=720:height=360:crop-top=58:crop-bottom=62:crop-left=0:crop-right=0)
+[01:08:57]        + source: 720 * 480, crop (58/62/0/0): 720 * 360, scale: 720 * 360
+[01:08:57]    + Output geometry
+[01:08:57]      + storage dimensions: 720 x 360
+[01:08:57]      + pixel aspect ratio: 32 : 27
+[01:08:57]      + display dimensions: 853 x 360
+[01:08:57]    + encoder: H.264 (libx264)
+[01:08:57]      + preset:  fast
+[01:08:57]      + profile: main
+[01:08:57]      + level:   4.0
+[01:08:57]      + quality: 22.00 (RF)
+[01:08:57]      + color profile: 6-1-6
+[01:08:57]  * audio track 1
+[01:08:57]    + decoder: English (AC3) (5.1 ch) (384 kbps) (track 1, id 0x80bd)
+[01:08:57]      + bitrate: 384 kbps, samplerate: 48000 Hz
+[01:08:57]    + mixdown: Stereo
+[01:08:57]    + dither: triangular
+[01:08:57]    + encoder: AAC (Apple AudioToolbox)
+[01:08:57]      + bitrate: 160 kbps, samplerate: 48000 Hz
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/HOW_TO_BE_SINGLE for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00f60000. Regions: 1 4
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000130
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x0000ac9f
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x0000ad7d
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x002f309b
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_03_1.VOB at 0x002f3e43
+libdvdread: Elapsed time 0
+libdvdread: Found 3 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/HOW_TO_BE_SINGLE for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00f60000. Regions: 1 4
+[01:08:59] sync: expecting 157825 video frames
+[01:08:59] encx264: min-keyint: 24, keyint: 240
+[01:08:59] encx264: encoding at constant RF 22.000000
+[01:08:59] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=32/27
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[01:08:59] sync: first pts video is 0
+[01:08:59] sync: "Chapter 1" (1) at frame 1 time 0
+[01:08:59] sync: first pts audio 0x80bd is 0
+[01:12:23] sync: "Chapter 2" (2) at frame 14830 time 55664358
+[01:15:13] sync: "Chapter 3" (3) at frame 29606 time 111129768
+[01:17:45] sync: "Chapter 4" (4) at frame 45022 time 168997578
+[01:19:57] sync: "Chapter 5" (5) at frame 59646 time 223892418
+[01:22:02] sync: "Chapter 6" (6) at frame 74969 time 281411130
+[01:24:07] sync: "Chapter 7" (7) at frame 91434 time 343216623
+[01:26:29] sync: "Chapter 8" (8) at frame 109838 time 412300638
+[01:28:09] sync: "Chapter 9" (9) at frame 121886 time 457525818
+[01:29:46] sync: "Chapter 10" (10) at frame 132646 time 497916168

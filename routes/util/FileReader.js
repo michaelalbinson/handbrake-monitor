@@ -10,12 +10,19 @@ const config = require('../../config/properties.json');
 
 
 class FileReader {
+	constructor(fileRedirect, mockedTime) {
+		this.testSeam_fileRedirect = fileRedirect;
+		this.testSeam_currentTime = mockedTime;
+	}
+
 	/**
 	 *
 	 * @returns {Promise<{currentEncode: string, startTime: string, status: string, statusText: string}>}
 	 */
 	getHBStatusItems() {
-		const hbPath = path.join(config.handbrakePath.replace('~', require('os').homedir()));
+		let hbPath = path.join(config.handbrakePath.replace('~', require('os').homedir()));
+		if (this.testSeam_fileRedirect)
+			hbPath = this.testSeam_fileRedirect;
 
 		let inStream = fs.createReadStream(hbPath);
 		return new Promise((resolve, reject)=> {
@@ -126,22 +133,30 @@ class FileReader {
 			return d;
 		});
 
+		// calculate the difference between each successful rip notification
 		const dateDiffs = [];
 		for (let i = 1; i < etaDates.length; i++)
 			dateDiffs.push(etaDates[i] - etaDates[i - 1]);
 
+		// just in case, likely not used anymore
+		if (dateDiffs.length === 0)
+			return '00:00:00';
+
+		// sum and average
 		let sum = 0;
 		for (let i = 0; i < dateDiffs.length; i++)
 			sum += dateDiffs[i];
 
-		if (dateDiffs.length === 0)
-			return '00:00:00';
+		let currentDate = new Date();
+		if (this.testSeam_currentTime)
+			currentDate = new Date(this.testSeam_currentTime);
 
-		// take the average
+		// take the average of all the chapter rip times, multiply it
 		const avg = (sum / dateDiffs.length);
-		const secondsSinceCheckin = (new Date() - etaDates[etaDates.length - 1]);
+		const secondsSinceCheckin = (currentDate - etaDates[etaDates.length - 1]);
 		const timeInSecs = ((avg * numRemainingChapters) - secondsSinceCheckin) / 1000;
 
+		// break the number of seconds back out into hours:minutes:seconds
 		const hours = Math.floor(timeInSecs / 3600)
 		const minutes = Math.floor((timeInSecs - (hours * 3600)) / 60);
 		const seconds = Math.floor((timeInSecs - (hours * 3600) - (minutes * 60)));
@@ -153,7 +168,7 @@ class FileReader {
 		if (num < 10)
 			return '0' + num;
 
-		return num;
+		return String(num);
 	}
 }
 

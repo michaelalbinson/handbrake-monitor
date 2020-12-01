@@ -1,0 +1,53 @@
+[00:43:52] macgui: QueueCore started encoding How to be Single.m4v
+[00:43:52] macgui: QueueCore with preset Fast 1080p30
+[00:43:52] Starting work at: Fri Nov 27 00:43:52 2020
+
+[00:43:52] 1 job(s) to process
+[00:43:52] Starting Task: Subtitle Scan
+[00:43:52] job configuration:
+[00:43:52]  * source
+[00:43:52]    + /Volumes/HOW_TO_BE_SINGLE
+[00:43:52]    + title 1, chapter(s) 1 to 12
+[00:43:52]  * destination
+[00:43:52]    + /Users/michaelalbinson/Desktop/net-new/How to be Single.m4v
+[00:43:52]    + container: MPEG-4 (libavformat)
+[00:43:52]      + align initial A/V stream timestamps
+[00:43:52]      + chapter markers
+[00:43:52]  * video track
+[00:43:52]    + decoder: mpeg2video
+[00:43:52]      + bitrate 200 kbps
+[00:43:52]    + filters
+[00:43:52]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[00:43:52]      + Decomb (mode=39)
+[00:43:52]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[00:43:52]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[00:43:52]      + Crop and Scale (width=720:height=360:crop-top=58:crop-bottom=62:crop-left=0:crop-right=0)
+[00:43:52]        + source: 720 * 480, crop (58/62/0/0): 720 * 360, scale: 720 * 360
+[00:43:52]    + Output geometry
+[00:43:52]      + storage dimensions: 720 x 360
+[00:43:52]      + pixel aspect ratio: 32 : 27
+[00:43:52]      + display dimensions: 853 x 360
+[00:43:52]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[00:43:52]    + subtitle, English (Wide Screen) [VOBSUB] (track 0, id 0x20bd, Picture)
+[00:43:52]    + subtitle, English (Letterbox) [VOBSUB] (track 1, id 0x21bd, Picture)
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/HOW_TO_BE_SINGLE for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00f60000. Regions: 1 4
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000130
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x0000ac9f
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x0000ad7d
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x002f309b
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_03_1.VOB at 0x002f3e43
+libdvdread: Elapsed time 0
+libdvdread: Found 3 VTS's
+libdvdread: Elapsed time 0

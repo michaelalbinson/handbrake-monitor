@@ -1,0 +1,1541 @@
+[02:17:12] macgui: ScanCore trying to open a physical disc at: /Volumes/TNGS7D1
+[02:17:12] macgui: ScanCore library found for decrypting physical disc
+[02:17:12] macgui: ScanCore scanning titles with a duration of 10 seconds or more
+[02:17:12] CPU: Intel(R) Core(TM) i7-4850HQ CPU @ 2.30GHz
+[02:17:12]  - Intel microarchitecture Haswell
+[02:17:12]  - logical processor count: 8
+[02:17:12] hb_scan: path=/Volumes/TNGS7D1, title_index=0
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/Volumes/TNGS7D1/) failed
+[02:17:12] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 1
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+[02:17:13] scan: DVD has 5 title(s)
+[02:17:13] scan: scanning title 1
+[02:17:14] scan: duration is 00:45:08 (2708567 ms)
+[02:17:14] pgc_id: 1, pgn: 1: pgc: 0x7fccf3dafd30
+[02:17:14] scan: checking audio 1
+[02:17:14] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:14] scan: checking audio 2
+[02:17:14] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:14] scan: checking subtitle 1
+[02:17:14] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:17:14] scan: title 1 has 8 chapters
+[02:17:14] scan: chap 1, 424533 ms
+[02:17:14] scan: chap 2, 316734 ms
+[02:17:14] scan: chap 3, 347266 ms
+[02:17:14] scan: chap 4, 242700 ms
+[02:17:14] scan: chap 5, 346433 ms
+[02:17:14] scan: chap 6, 327333 ms
+[02:17:14] scan: chap 7, 360934 ms
+[02:17:14] scan: chap 8, 342633 ms
+[02:17:14] scan: aspect = 4:3
+[02:17:14] scan: scanning title 2
+[02:17:14] scan: duration is 00:45:10 (2710066 ms)
+[02:17:14] pgc_id: 2, pgn: 1: pgc: 0x7fccf3d26150
+[02:17:14] scan: checking audio 1
+[02:17:14] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:14] scan: checking audio 2
+[02:17:14] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:14] scan: checking subtitle 1
+[02:17:14] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:17:14] scan: title 2 has 8 chapters
+[02:17:14] scan: chap 1, 316667 ms
+[02:17:14] scan: chap 2, 172800 ms
+[02:17:14] scan: chap 3, 285300 ms
+[02:17:14] scan: chap 4, 271834 ms
+[02:17:14] scan: chap 5, 588734 ms
+[02:17:14] scan: chap 6, 566967 ms
+[02:17:14] scan: chap 7, 363633 ms
+[02:17:14] scan: chap 8, 144133 ms
+[02:17:14] scan: aspect = 4:3
+[02:17:14] scan: scanning title 3
+[02:17:15] scan: duration is 00:45:08 (2708600 ms)
+[02:17:15] pgc_id: 3, pgn: 1: pgc: 0x7fccf3d97f20
+[02:17:15] scan: checking audio 1
+[02:17:15] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:15] scan: checking audio 2
+[02:17:15] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:15] scan: checking subtitle 1
+[02:17:15] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:17:15] scan: title 3 has 8 chapters
+[02:17:15] scan: chap 1, 301167 ms
+[02:17:15] scan: chap 2, 215633 ms
+[02:17:15] scan: chap 3, 349500 ms
+[02:17:15] scan: chap 4, 435767 ms
+[02:17:15] scan: chap 5, 346866 ms
+[02:17:15] scan: chap 6, 424667 ms
+[02:17:15] scan: chap 7, 193400 ms
+[02:17:15] scan: chap 8, 441600 ms
+[02:17:15] scan: aspect = 4:3
+[02:17:15] scan: scanning title 4
+[02:17:15] scan: duration is 00:45:08 (2708266 ms)
+[02:17:15] pgc_id: 4, pgn: 1: pgc: 0x7fccf3d97f20
+[02:17:15] scan: checking audio 1
+[02:17:15] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:15] scan: checking audio 2
+[02:17:15] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:17:15] scan: checking subtitle 1
+[02:17:15] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:17:15] scan: title 4 has 8 chapters
+[02:17:15] scan: chap 1, 417933 ms
+[02:17:15] scan: chap 2, 161834 ms
+[02:17:15] scan: chap 3, 267367 ms
+[02:17:15] scan: chap 4, 241734 ms
+[02:17:15] scan: chap 5, 371166 ms
+[02:17:15] scan: chap 6, 544467 ms
+[02:17:15] scan: chap 7, 354166 ms
+[02:17:15] scan: chap 8, 349600 ms
+[02:17:15] scan: aspect = 4:3
+[02:17:15] scan: scanning title 5
+[02:17:15] scan: duration is 00:00:00 (500 ms)
+[02:17:15] scan: ignoring title (too short)
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+[02:18:41] scan: decoding previews for title 1
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:18:42] scan: title angle(s) 1
+[02:18:42] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:18:42] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:18:44] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/0/8, aspect 4:3, PAR 8:9
+[02:18:44] scan: decoding previews for title 2
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:18:45] scan: title angle(s) 1
+[02:18:45] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:18:45] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:18:46] scan: 10 previews, 720x480, 29.970 fps, autocrop = 0/0/16/8, aspect 4:3, PAR 8:9
+[02:18:46] scan: decoding previews for title 3
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:18:47] scan: title angle(s) 1
+[02:18:47] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:18:47] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:18:49] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/8/8, aspect 4:3, PAR 8:9
+[02:18:49] scan: decoding previews for title 4
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:18:50] scan: title angle(s) 1
+[02:18:50] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:18:50] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:18:52] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/2/8, aspect 4:3, PAR 8:9
+[02:18:52] libhb: scan thread found 4 valid title(s)
+[02:18:52] macgui: ScanCore scan done
+[02:24:04] macgui: QueueCore scanning specifically for title: 1
+[02:24:04] CPU: Intel(R) Core(TM) i7-4850HQ CPU @ 2.30GHz
+[02:24:04]  - Intel microarchitecture Haswell
+[02:24:04]  - logical processor count: 8
+[02:24:04] hb_scan: path=/Volumes/TNGS7D1, title_index=1
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/Volumes/TNGS7D1/) failed
+[02:24:04] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+[02:24:08] scan: DVD has 5 title(s)
+[02:24:08] scan: scanning title 1
+[02:24:08] scan: duration is 00:45:08 (2708567 ms)
+[02:24:08] pgc_id: 1, pgn: 1: pgc: 0x7f8654e0f3d0
+[02:24:08] scan: checking audio 1
+[02:24:08] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:24:08] scan: checking audio 2
+[02:24:08] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:24:08] scan: checking subtitle 1
+[02:24:08] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:24:08] scan: title 1 has 8 chapters
+[02:24:08] scan: chap 1, 424533 ms
+[02:24:08] scan: chap 2, 316734 ms
+[02:24:08] scan: chap 3, 347266 ms
+[02:24:08] scan: chap 4, 242700 ms
+[02:24:08] scan: chap 5, 346433 ms
+[02:24:08] scan: chap 6, 327333 ms
+[02:24:08] scan: chap 7, 360934 ms
+[02:24:08] scan: chap 8, 342633 ms
+[02:24:08] scan: aspect = 4:3
+[02:24:08] scan: decoding previews for title 1
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:24:09] scan: title angle(s) 1
+[02:24:10] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:24:10] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:24:12] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/0/8, aspect 4:3, PAR 8:9
+[02:24:12] libhb: scan thread found 1 valid title(s)
+[02:24:12] macgui: QueueCore scan done
+[02:24:12] macgui: QueueCore started encoding NEXTGEN_S07_E01.m4v
+[02:24:12] Starting work at: Thu Nov 26 02:24:12 2020
+
+[02:24:12] 1 job(s) to process
+[02:24:12] macgui: QueueCore with preset Fast 1080p30
+[02:24:12] Starting Task: Subtitle Scan
+[02:24:12] job configuration:
+[02:24:12]  * source
+[02:24:12]    + /Volumes/TNGS7D1
+[02:24:12]    + title 1, chapter(s) 1 to 8
+[02:24:12]  * destination
+[02:24:12]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E01.m4v
+[02:24:12]    + container: MPEG-4 (libavformat)
+[02:24:12]      + align initial A/V stream timestamps
+[02:24:12]      + chapter markers
+[02:24:12]  * video track
+[02:24:12]    + decoder: mpeg2video
+[02:24:12]      + bitrate 200 kbps
+[02:24:12]    + filters
+[02:24:12]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[02:24:12]      + Decomb (mode=39)
+[02:24:12]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[02:24:12]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[02:24:12]      + Crop and Scale (width=712:height=480:crop-top=0:crop-bottom=0:crop-left=0:crop-right=8)
+[02:24:12]        + source: 720 * 480, crop (0/0/0/8): 712 * 480, scale: 712 * 480
+[02:24:12]    + Output geometry
+[02:24:12]      + storage dimensions: 712 x 480
+[02:24:12]      + pixel aspect ratio: 8 : 9
+[02:24:12]      + display dimensions: 632 x 480
+[02:24:12]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[02:24:12]    + subtitle, English (4:3) [VOBSUB] (track 0, id 0x20bd, Picture)
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:24:14] sync: expecting 64940 video frames
+[02:29:21] reader: done. 6 scr changes
+[02:29:21] work: average encoding speed for job is 0.000000 fps
+[02:29:21] comb detect: heavy 0 | light 0 | uncombed 0 | total 0
+[02:29:21] decomb: deinterlaced 0 | blended 0 | unfiltered 0 | total 0
+[02:29:21] vfr: 0 frames output, 0 dropped and 0 duped for CFR/PFR
+[02:29:21] vfr: lost time: 0 (0 frames)
+[02:29:21] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[02:29:21] mpeg2video-decoder done: 0 frames, 1 decoder errors
+[02:29:21] sync: got 0 frames, 64940 expected
+[02:29:21] Subtitle track 0 (id 0x20bd) 'English (4:3) [VOBSUB]': 831 hits (0 forced)
+[02:29:21] No candidate detected during subtitle scan
+[02:29:21] Starting Task: Encoding Pass
+[02:29:21] job configuration:
+[02:29:21]  * source
+[02:29:21]    + /Volumes/TNGS7D1
+[02:29:21]    + title 1, chapter(s) 1 to 8
+[02:29:21]  * destination
+[02:29:21]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E01.m4v
+[02:29:21]    + container: MPEG-4 (libavformat)
+[02:29:21]      + align initial A/V stream timestamps
+[02:29:21]      + chapter markers
+[02:29:21]  * video track
+[02:29:21]    + decoder: mpeg2video
+[02:29:21]      + bitrate 200 kbps
+[02:29:21]    + filters
+[02:29:21]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[02:29:21]      + Decomb (mode=39)
+[02:29:21]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[02:29:21]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[02:29:21]      + Crop and Scale (width=712:height=480:crop-top=0:crop-bottom=0:crop-left=0:crop-right=8)
+[02:29:21]        + source: 720 * 480, crop (0/0/0/8): 712 * 480, scale: 712 * 480
+[02:29:21]    + Output geometry
+[02:29:21]      + storage dimensions: 712 x 480
+[02:29:21]      + pixel aspect ratio: 8 : 9
+[02:29:21]      + display dimensions: 632 x 480
+[02:29:21]    + encoder: H.264 (libx264)
+[02:29:21]      + preset:  fast
+[02:29:21]      + profile: main
+[02:29:21]      + level:   4.0
+[02:29:21]      + quality: 22.00 (RF)
+[02:29:21]      + color profile: 6-6-6
+[02:29:21]  * audio track 1
+[02:29:21]    + decoder: English (AC3) (5.1 ch) (448 kbps) (track 1, id 0x80bd)
+[02:29:21]      + bitrate: 448 kbps, samplerate: 48000 Hz
+[02:29:21]    + mixdown: Stereo
+[02:29:21]    + dither: triangular
+[02:29:21]    + encoder: AAC (Apple AudioToolbox)
+[02:29:21]      + bitrate: 160 kbps, samplerate: 48000 Hz
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:29:22] sync: expecting 64940 video frames
+[02:29:22] encx264: min-keyint: 24, keyint: 240
+[02:29:22] encx264: encoding at constant RF 22.000000
+[02:29:22] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=8/9
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[02:29:22] sync: first pts video is 0
+[02:29:22] sync: "Chapter 1" (1) at frame 1 time 0
+[02:29:22] sync: first pts audio 0x80bd is 0
+[02:29:23] 2.877867s: Video -> Film
+[02:29:23] 4.471122s: Film -> Video
+[02:29:23] 4.871533s: Video -> Film
+[02:29:24] 10.352011s: Film -> Video
+[02:29:24] 10.377033s: Video -> Film
+[02:29:27] 23.239889s: Film -> Video
+[02:29:27] 25.358667s: Video -> Film
+[02:29:28] 27.660967s: Film -> Video
+[02:29:28] 30.847500s: Video -> Film
+[02:29:29] 36.836800s: Film -> Video
+[02:29:31] 43.877178s: Video -> Film
+[02:29:31] 44.944901s: Film -> Video
+[02:29:32] 48.748699s: Video -> Film
+[02:29:38] 89.964897s: Film -> Video
+[02:29:38] 91.633232s: Video -> Film
+[02:30:08] 318.251251s: Film -> Video
+[02:30:09] 320.219910s: Video -> Film
+[02:30:09] 320.386719s: Film -> Video
+[02:30:33] sync: "Chapter 2" (2) at frame 10959 time 38246962
+[02:30:36] 440.289856s: Video -> Film
+[02:30:36] 441.340881s: Film -> Video
+[02:30:37] 443.918488s: Video -> Film
+[02:30:37] 444.644165s: Film -> Video
+[02:30:37] 444.677551s: Video -> Film
+[02:30:38] 452.251831s: Film -> Video
+[02:30:38] 452.285156s: Video -> Film
+[02:30:39] 459.425598s: Film -> Video
+[02:30:40] 461.961517s: Video -> Film
+[02:30:41] 467.900757s: Film -> Video
+[02:30:41] 470.436615s: Video -> Film
+[02:30:42] 474.340546s: Film -> Video
+[02:30:43] 476.918213s: Video -> Film
+[02:30:43] 479.879364s: Film -> Video
+[02:30:44] 482.357025s: Video -> Film
+[02:30:44] 483.858490s: Film -> Video
+[02:30:44] 486.377686s: Video -> Film
+[02:30:49] 519.285400s: Film -> Video
+[02:30:49] 519.318787s: Video -> Film
+[02:30:49] 520.386536s: Film -> Video
+[02:30:49] 522.905884s: Video -> Film
+[02:30:50] 523.789978s: Film -> Video
+[02:30:50] 523.823303s: Video -> Film
+[02:30:50] 528.361145s: Film -> Video
+[02:30:51] 530.930420s: Video -> Film
+[02:30:52] 537.979309s: Film -> Video
+[02:30:52] 538.004150s: Video -> Film
+[02:30:52] 539.805969s: Film -> Video
+[02:30:53] 542.358643s: Video -> Film
+[02:30:54] 547.246704s: Film -> Video
+[02:30:54] 549.766113s: Video -> Film
+[02:30:55] 553.394714s: Film -> Video
+[02:30:55] 555.897217s: Video -> Film
+[02:30:55] 557.757202s: Film -> Video
+[02:30:56] 560.743713s: Video -> Film
+[02:30:56] 565.231323s: Film -> Video
+[02:30:56] 565.264709s: Video -> Film
+[02:30:57] 566.732849s: Film -> Video
+[02:30:57] 569.218872s: Video -> Film
+[02:30:59] 578.911621s: Film -> Video
+[02:31:00] 584.417175s: Video -> Film
+[02:31:01] 591.332642s: Film -> Video
+[02:31:01] 596.312622s: Video -> Film
+[02:31:21] 739.371948s: Film -> Video
+[02:31:22] sync: "Chapter 3" (3) at frame 18945 time 66781486
+[02:31:23] 750.600098s: Video -> Film
+[02:31:29] 792.958862s: Film -> Video
+[02:31:30] 796.462341s: Video -> Film
+[02:31:59] 1007.106140s: Film -> Video
+[02:32:00] 1009.875549s: Video -> Film
+[02:32:10] sync: "Chapter 4" (4) at frame 27369 time 98065990
+[02:32:23] 1160.592773s: Film -> Video
+[02:32:23] 1165.047485s: Video -> Film
+[02:32:46] sync: "Chapter 5" (5) at frame 33222 time 119932335
+[02:33:18] 1564.296021s: Film -> Video
+[02:33:19] 1567.616333s: Video -> Film
+[02:33:21] 1576.041382s: Film -> Video
+[02:33:21] 1579.010864s: Video -> Film
+[02:33:24] 1596.928711s: Film -> Video
+[02:33:24] 1596.970703s: Video -> Film
+[02:33:28] 1623.780762s: Film -> Video
+[02:33:28] 1623.822388s: Video -> Film
+[02:33:28] 1626.124390s: Film -> Video
+[02:33:29] 1629.845215s: Video -> Film
+[02:33:30] 1640.105469s: Film -> Video
+[02:33:30] 1640.146973s: Video -> Film
+[02:33:31] 1644.226074s: Film -> Video
+[02:33:32] 1648.747070s: Video -> Film
+[02:33:36] 1677.542725s: Film -> Video
+[02:33:37] sync: "Chapter 6" (6) at frame 41635 time 151141767
+[02:33:37] 1685.250366s: Video -> Film
+[02:33:41] 1709.874878s: Film -> Video
+[02:33:41] 1712.911255s: Video -> Film
+[02:33:44] 1728.068237s: Film -> Video
+[02:33:44] 1728.093018s: Video -> Film
+[02:33:45] 1734.966919s: Film -> Video
+[02:33:45] 1737.469116s: Video -> Film
+[02:33:46] 1739.070557s: Film -> Video
+[02:33:46] 1742.040405s: Video -> Film
+[02:33:47] 1750.782715s: Film -> Video
+[02:33:49] 1756.771851s: Video -> Film
+[02:33:51] 1771.369995s: Film -> Video
+[02:33:51] 1774.339233s: Video -> Film
+[02:34:23] 2003.434814s: Film -> Video
+[02:34:23] sync: "Chapter 7" (7) at frame 49658 time 180631230
+[02:34:24] 2011.509521s: Video -> Film
+[02:34:34] 2074.472412s: Film -> Video
+[02:34:35] 2078.476562s: Video -> Film
+[02:34:35] 2081.412598s: Film -> Video
+[02:34:36] 2083.965576s: Video -> Film
+[02:34:38] 2099.597412s: Film -> Video
+[02:34:38] 2099.630859s: Video -> Film
+[02:34:41] 2116.947998s: Film -> Video
+[02:34:41] 2118.691895s: Video -> Film
+[02:34:45] 2141.881836s: Film -> Video
+[02:34:45] 2142.757568s: Video -> Film
+[02:35:11] 2339.879395s: Film -> Video
+[02:35:11] 2340.237793s: Video -> Film
+[02:35:13] 2347.344971s: Film -> Video
+[02:35:13] 2347.378418s: Video -> Film
+[02:35:15] 2355.144775s: Film -> Video
+[02:35:15] 2356.863037s: Video -> Film
+[02:35:17] sync: "Chapter 8" (8) at frame 58462 time 213147717
+[02:35:17] 2368.332520s: Film -> Video
+[02:35:17] 2368.365967s: Video -> Film
+[02:35:41] 2544.542480s: Film -> Video
+[02:35:42] 2554.218262s: Video -> Film
+[02:35:55] 2648.579102s: Film -> Video
+[02:36:05] reader: done. 6 scr changes
+[02:36:06] work: average encoding speed for job is 166.407745 fps
+[02:36:06] comb detect: heavy 2992 | light 3157 | uncombed 60970 | total 67119
+[02:36:06] decomb: deinterlaced 2992 | blended 3157 | unfiltered 60970 | total 67119
+[02:36:06] vfr: 67119 frames output, 0 dropped and 0 duped for CFR/PFR
+[02:36:06] vfr: lost time: 0 (0 frames)
+[02:36:06] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[02:36:06] ac3-decoder done: 84728 frames, 0 decoder errors
+[02:36:06] mpeg2video-decoder done: 67119 frames, 0 decoder errors
+[02:36:06] sync: got 67119 frames, 64940 expected
+[02:36:06] sync: framerate min 19.978 fps, max 39.964 fps, avg 24.755 fps
+x264 [info]: frame I:622   Avg QP:17.48  size: 25507
+x264 [info]: frame P:19521 Avg QP:20.67  size:  4884
+x264 [info]: frame B:46976 Avg QP:23.69  size:  1315
+x264 [info]: consecutive B-frames:  1.8%  7.2% 22.6% 68.5%
+x264 [info]: mb I  I16..4: 30.6%  0.0% 69.4%
+x264 [info]: mb P  I16..4:  2.2%  0.0%  2.1%  P16..4: 41.6% 14.1%  8.6%  0.0%  0.0%    skip:31.5%
+x264 [info]: mb B  I16..4:  1.9%  0.0%  0.2%  B16..8: 18.0%  3.2%  0.2%  direct:11.4%  skip:65.1%  L0:41.1% L1:50.7% BI: 8.2%
+x264 [info]: coded y,uvDC,uvAC intra: 41.1% 74.2% 32.3% inter: 6.4% 23.2% 1.9%
+x264 [info]: i16 v,h,dc,p: 38% 25% 18% 20%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 25% 18%  6%  6%  5%  7%  5%  6%
+x264 [info]: i8c dc,h,v,p: 53% 20% 21%  6%
+x264 [info]: Weighted P-Frames: Y:1.6% UV:1.2%
+x264 [info]: ref P L0: 63.5% 36.5%
+x264 [info]: ref B L0: 79.7% 20.3%
+x264 [info]: ref B L1: 95.1%  4.9%
+x264 [info]: kb/s:510.38
+[02:36:06] mux: track 0, 67119 frames, 172946219 bytes, 510.28 kbps, fifo 4096
+[02:36:06] mux: track 1, 127095 frames, 55823397 bytes, 164.71 kbps, fifo 8192
+[02:36:06] Finished work at: Thu Nov 26 02:36:06 2020
+
+[02:36:06] libhb: work result = 0
+[02:36:06] macgui: QueueCore work done
+[02:36:06] macgui: QueueCore scanning specifically for title: 2
+[02:36:06] CPU: Intel(R) Core(TM) i7-4850HQ CPU @ 2.30GHz
+[02:36:06]  - Intel microarchitecture Haswell
+[02:36:06]  - logical processor count: 8
+[02:36:06] hb_scan: path=/Volumes/TNGS7D1, title_index=2
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/Volumes/TNGS7D1/) failed
+[02:36:06] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+[02:36:07] scan: DVD has 5 title(s)
+[02:36:07] scan: scanning title 2
+[02:36:07] scan: duration is 00:45:10 (2710066 ms)
+[02:36:07] pgc_id: 2, pgn: 1: pgc: 0x7f8654f9afc0
+[02:36:07] scan: checking audio 1
+[02:36:07] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:36:07] scan: checking audio 2
+[02:36:07] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:36:07] scan: checking subtitle 1
+[02:36:07] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:36:07] scan: title 2 has 8 chapters
+[02:36:07] scan: chap 1, 316667 ms
+[02:36:07] scan: chap 2, 172800 ms
+[02:36:07] scan: chap 3, 285300 ms
+[02:36:07] scan: chap 4, 271834 ms
+[02:36:07] scan: chap 5, 588734 ms
+[02:36:07] scan: chap 6, 566967 ms
+[02:36:07] scan: chap 7, 363633 ms
+[02:36:07] scan: chap 8, 144133 ms
+[02:36:07] scan: aspect = 4:3
+[02:36:07] scan: decoding previews for title 2
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:36:08] scan: title angle(s) 1
+[02:36:08] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:36:08] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:36:09] scan: 10 previews, 720x480, 29.970 fps, autocrop = 0/0/16/8, aspect 4:3, PAR 8:9
+[02:36:09] libhb: scan thread found 1 valid title(s)
+[02:36:09] macgui: QueueCore scan done
+[02:36:09] macgui: QueueCore started encoding NEXTGEN_S07_E02.m4v
+[02:36:09] macgui: QueueCore with preset Fast 1080p30
+[02:36:09] Starting work at: Thu Nov 26 02:36:09 2020
+
+[02:36:09] 1 job(s) to process
+[02:36:09] Starting Task: Subtitle Scan
+[02:36:09] job configuration:
+[02:36:09]  * source
+[02:36:09]    + /Volumes/TNGS7D1
+[02:36:09]    + title 2, chapter(s) 1 to 8
+[02:36:09]  * destination
+[02:36:09]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E02.m4v
+[02:36:09]    + container: MPEG-4 (libavformat)
+[02:36:09]      + align initial A/V stream timestamps
+[02:36:09]      + chapter markers
+[02:36:09]  * video track
+[02:36:09]    + decoder: mpeg2video
+[02:36:09]      + bitrate 200 kbps
+[02:36:09]    + filters
+[02:36:09]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[02:36:09]      + Decomb (mode=39)
+[02:36:09]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[02:36:09]        + frame rate: 29.970 fps -> peak rate limited to 30.000 fps
+[02:36:09]      + Crop and Scale (width=696:height=480:crop-top=0:crop-bottom=0:crop-left=16:crop-right=8)
+[02:36:09]        + source: 720 * 480, crop (0/0/16/8): 696 * 480, scale: 696 * 480
+[02:36:09]    + Output geometry
+[02:36:09]      + storage dimensions: 696 x 480
+[02:36:09]      + pixel aspect ratio: 8 : 9
+[02:36:09]      + display dimensions: 618 x 480
+[02:36:09]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[02:36:09]    + subtitle, English (4:3) [VOBSUB] (track 0, id 0x20bd, Picture)
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:36:11] sync: expecting 81220 video frames
+[02:39:50] reader: done. 5 scr changes
+[02:39:50] work: average encoding speed for job is 0.000000 fps
+[02:39:50] comb detect: heavy 0 | light 0 | uncombed 0 | total 0
+[02:39:50] decomb: deinterlaced 0 | blended 0 | unfiltered 0 | total 0
+[02:39:50] vfr: 0 frames output, 0 dropped and 0 duped for CFR/PFR
+[02:39:50] vfr: lost time: 0 (0 frames)
+[02:39:50] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[02:39:50] mpeg2video-decoder done: 0 frames, 1 decoder errors
+[02:39:50] sync: got 0 frames, 81220 expected
+[02:39:50] Subtitle track 0 (id 0x20bd) 'English (4:3) [VOBSUB]': 709 hits (0 forced)
+[02:39:50] No candidate detected during subtitle scan
+[02:39:50] Starting Task: Encoding Pass
+[02:39:50] job configuration:
+[02:39:50]  * source
+[02:39:50]    + /Volumes/TNGS7D1
+[02:39:50]    + title 2, chapter(s) 1 to 8
+[02:39:50]  * destination
+[02:39:50]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E02.m4v
+[02:39:50]    + container: MPEG-4 (libavformat)
+[02:39:50]      + align initial A/V stream timestamps
+[02:39:50]      + chapter markers
+[02:39:50]  * video track
+[02:39:50]    + decoder: mpeg2video
+[02:39:50]      + bitrate 200 kbps
+[02:39:50]    + filters
+[02:39:50]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[02:39:50]      + Decomb (mode=39)
+[02:39:50]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[02:39:50]        + frame rate: 29.970 fps -> peak rate limited to 30.000 fps
+[02:39:50]      + Crop and Scale (width=696:height=480:crop-top=0:crop-bottom=0:crop-left=16:crop-right=8)
+[02:39:50]        + source: 720 * 480, crop (0/0/16/8): 696 * 480, scale: 696 * 480
+[02:39:50]    + Output geometry
+[02:39:50]      + storage dimensions: 696 x 480
+[02:39:50]      + pixel aspect ratio: 8 : 9
+[02:39:50]      + display dimensions: 618 x 480
+[02:39:50]    + encoder: H.264 (libx264)
+[02:39:50]      + preset:  fast
+[02:39:50]      + profile: main
+[02:39:50]      + level:   4.0
+[02:39:50]      + quality: 22.00 (RF)
+[02:39:50]      + color profile: 6-6-6
+[02:39:50]  * audio track 1
+[02:39:50]    + decoder: English (AC3) (5.1 ch) (448 kbps) (track 1, id 0x80bd)
+[02:39:50]      + bitrate: 448 kbps, samplerate: 48000 Hz
+[02:39:50]    + mixdown: Stereo
+[02:39:50]    + dither: triangular
+[02:39:50]    + encoder: AAC (Apple AudioToolbox)
+[02:39:50]      + bitrate: 160 kbps, samplerate: 48000 Hz
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:39:52] sync: expecting 81220 video frames
+[02:39:52] encx264: min-keyint: 30, keyint: 300
+[02:39:52] encx264: encoding at constant RF 22.000000
+[02:39:52] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=8/9
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[02:39:52] sync: first pts video is 0
+[02:39:52] sync: "Chapter 1" (1) at frame 1 time 0
+[02:39:52] sync: first pts audio 0x80bd is 0
+[02:39:52] 3.236567s: Video -> Film
+[02:40:00] 66.332909s: Film -> Video
+[02:40:00] 66.366280s: Video -> Film
+[02:40:18] 209.742798s: Film -> Video
+[02:40:39] sync: "Chapter 2" (2) at frame 8265 time 28528495
+[02:40:59] 409.242126s: Video -> Film
+[02:41:11] sync: "Chapter 3" (3) at frame 12965 time 44096047
+[02:41:11] 489.989410s: Film -> Video
+[02:41:11] 493.960083s: Video -> Film
+[02:41:12] 496.896362s: Film -> Video
+[02:41:12] 496.929688s: Video -> Film
+[02:41:19] 551.317322s: Film -> Video
+[02:41:20] 556.022034s: Video -> Film
+[02:41:22] 566.432434s: Film -> Video
+[02:41:23] 570.436462s: Video -> Film
+[02:41:23] 574.240234s: Film -> Video
+[02:41:26] 588.320923s: Video -> Film
+[02:41:49] 753.085510s: Film -> Video
+[02:41:50] 754.687134s: Video -> Film
+[02:41:53] 773.072083s: Film -> Video
+[02:41:53] sync: "Chapter 4" (4) at frame 20041 time 69798709
+[02:41:54] 780.512878s: Video -> Film
+[02:42:11] 873.005249s: Film -> Video
+[02:42:11] 873.038574s: Video -> Film
+[02:42:25] 965.797852s: Film -> Video
+[02:42:25] 967.966736s: Video -> Film
+[02:42:36] 1044.576538s: Film -> Video
+[02:42:36] sync: "Chapter 5" (5) at frame 26628 time 94288164
+[02:42:38] 1056.321655s: Video -> Film
+[02:42:41] 1081.346558s: Film -> Video
+[02:42:41] 1081.380005s: Video -> Film
+[02:42:53] 1170.902710s: Film -> Video
+[02:42:53] 1170.936035s: Video -> Film
+[02:42:56] 1190.455444s: Film -> Video
+[02:42:56] 1190.488892s: Video -> Film
+[02:42:57] 1201.099487s: Film -> Video
+[02:42:57] 1201.132812s: Video -> Film
+[02:42:58] 1205.270264s: Film -> Video
+[02:42:58] 1205.303589s: Video -> Film
+[02:43:12] 1310.942505s: Film -> Video
+[02:43:13] 1314.946533s: Video -> Film
+[02:43:21] 1371.636475s: Film -> Video
+[02:43:21] 1371.669800s: Video -> Film
+[02:43:21] 1374.005371s: Film -> Video
+[02:43:21] 1374.038818s: Video -> Film
+[02:43:22] 1378.176270s: Film -> Video
+[02:43:22] 1378.209717s: Video -> Film
+[02:43:57] 1631.262451s: Film -> Video
+[02:43:58] sync: "Chapter 6" (6) at frame 40878 time 147327127
+[02:44:00] 1642.640381s: Video -> Film
+[02:44:33] 1885.816528s: Film -> Video
+[02:44:33] 1885.849976s: Video -> Film
+[02:45:20] 2200.997803s: Film -> Video
+[02:45:20] sync: "Chapter 7" (7) at frame 54544 time 198405128
+[02:45:21] 2206.036377s: Video -> Film
+[02:46:09] sync: "Chapter 8" (8) at frame 63281 time 231164836
+[02:46:09] 2568.531494s: Film -> Video
+[02:46:09] 2572.034912s: Video -> Film
+[02:46:20] 2648.945312s: Film -> Video
+[02:46:32] reader: done. 5 scr changes
+[02:46:32] work: average encoding speed for job is 167.744827 fps
+[02:46:32] comb detect: heavy 3291 | light 1532 | uncombed 62321 | total 67144
+[02:46:32] decomb: deinterlaced 3291 | blended 1532 | unfiltered 62321 | total 67144
+[02:46:32] vfr: 67144 frames output, 0 dropped and 0 duped for CFR/PFR
+[02:46:32] vfr: lost time: 0 (0 frames)
+[02:46:32] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[02:46:32] ac3-decoder done: 84775 frames, 0 decoder errors
+[02:46:32] mpeg2video-decoder done: 67144 frames, 0 decoder errors
+[02:46:32] sync: got 67144 frames, 81220 expected
+[02:46:32] sync: framerate min 19.978 fps, max 29.970 fps, avg 24.751 fps
+x264 [info]: frame I:553   Avg QP:17.29  size: 19062
+x264 [info]: frame P:19315 Avg QP:20.26  size:  4132
+x264 [info]: frame B:47276 Avg QP:22.76  size:  1286
+x264 [info]: consecutive B-frames:  1.8%  6.7% 18.5% 73.0%
+x264 [info]: mb I  I16..4: 35.6%  0.0% 64.4%
+x264 [info]: mb P  I16..4:  2.5%  0.0%  1.8%  P16..4: 44.6% 12.6%  8.3%  0.0%  0.0%    skip:30.1%
+x264 [info]: mb B  I16..4:  3.2%  0.0%  0.2%  B16..8: 19.7%  3.1%  0.1%  direct:12.3%  skip:61.4%  L0:43.2% L1:51.2% BI: 5.7%
+x264 [info]: coded y,uvDC,uvAC intra: 28.6% 68.6% 21.0% inter: 6.0% 24.4% 1.0%
+x264 [info]: i16 v,h,dc,p: 35% 24% 22% 20%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 24% 22%  5%  6%  5%  7%  4%  5%
+x264 [info]: i8c dc,h,v,p: 58% 19% 19%  5%
+x264 [info]: Weighted P-Frames: Y:5.6% UV:4.7%
+x264 [info]: ref P L0: 62.3% 37.7%
+x264 [info]: ref B L0: 77.5% 22.5%
+x264 [info]: ref B L1: 94.6%  5.4%
+x264 [info]: kb/s:445.80
+[02:46:32] mux: track 0, 67144 frames, 151148057 bytes, 445.73 kbps, fifo 8192
+[02:46:32] mux: track 1, 127165 frames, 55880669 bytes, 164.79 kbps, fifo 16384
+[02:46:32] Finished work at: Thu Nov 26 02:46:32 2020
+
+[02:46:32] libhb: work result = 0
+[02:46:32] macgui: QueueCore work done
+[02:46:32] macgui: QueueCore scanning specifically for title: 3
+[02:46:32] CPU: Intel(R) Core(TM) i7-4850HQ CPU @ 2.30GHz
+[02:46:32]  - Intel microarchitecture Haswell
+[02:46:32]  - logical processor count: 8
+[02:46:32] hb_scan: path=/Volumes/TNGS7D1, title_index=3
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/Volumes/TNGS7D1/) failed
+[02:46:33] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+[02:46:33] scan: DVD has 5 title(s)
+[02:46:33] scan: scanning title 3
+[02:46:33] scan: duration is 00:45:08 (2708600 ms)
+[02:46:33] pgc_id: 3, pgn: 1: pgc: 0x7f8654e0f3d0
+[02:46:33] scan: checking audio 1
+[02:46:33] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:46:33] scan: checking audio 2
+[02:46:33] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:46:33] scan: checking subtitle 1
+[02:46:33] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:46:33] scan: title 3 has 8 chapters
+[02:46:33] scan: chap 1, 301167 ms
+[02:46:33] scan: chap 2, 215633 ms
+[02:46:33] scan: chap 3, 349500 ms
+[02:46:33] scan: chap 4, 435767 ms
+[02:46:33] scan: chap 5, 346866 ms
+[02:46:33] scan: chap 6, 424667 ms
+[02:46:33] scan: chap 7, 193400 ms
+[02:46:33] scan: chap 8, 441600 ms
+[02:46:33] scan: aspect = 4:3
+[02:46:33] scan: decoding previews for title 3
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:46:34] scan: title angle(s) 1
+[02:46:34] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:46:34] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:46:35] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/8/8, aspect 4:3, PAR 8:9
+[02:46:35] libhb: scan thread found 1 valid title(s)
+[02:46:36] macgui: QueueCore scan done
+[02:46:36] macgui: QueueCore started encoding NEXTGEN_S07_E03.m4v
+[02:46:36] macgui: QueueCore with preset Fast 1080p30
+[02:46:36] Starting work at: Thu Nov 26 02:46:36 2020
+
+[02:46:36] 1 job(s) to process
+[02:46:36] Starting Task: Subtitle Scan
+[02:46:36] job configuration:
+[02:46:36]  * source
+[02:46:36]    + /Volumes/TNGS7D1
+[02:46:36]    + title 3, chapter(s) 1 to 8
+[02:46:36]  * destination
+[02:46:36]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E03.m4v
+[02:46:36]    + container: MPEG-4 (libavformat)
+[02:46:36]      + align initial A/V stream timestamps
+[02:46:36]      + chapter markers
+[02:46:36]  * video track
+[02:46:36]    + decoder: mpeg2video
+[02:46:36]      + bitrate 200 kbps
+[02:46:36]    + filters
+[02:46:36]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[02:46:36]      + Decomb (mode=39)
+[02:46:36]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[02:46:36]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[02:46:36]      + Crop and Scale (width=704:height=480:crop-top=0:crop-bottom=0:crop-left=8:crop-right=8)
+[02:46:36]        + source: 720 * 480, crop (0/0/8/8): 704 * 480, scale: 704 * 480
+[02:46:36]    + Output geometry
+[02:46:36]      + storage dimensions: 704 x 480
+[02:46:36]      + pixel aspect ratio: 8 : 9
+[02:46:36]      + display dimensions: 625 x 480
+[02:46:36]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[02:46:36]    + subtitle, English (4:3) [VOBSUB] (track 0, id 0x20bd, Picture)
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:46:37] sync: expecting 64941 video frames
+[02:50:01] reader: done. 10 scr changes
+[02:50:01] work: average encoding speed for job is 0.000000 fps
+[02:50:01] comb detect: heavy 0 | light 0 | uncombed 0 | total 0
+[02:50:01] decomb: deinterlaced 0 | blended 0 | unfiltered 0 | total 0
+[02:50:01] vfr: 0 frames output, 0 dropped and 0 duped for CFR/PFR
+[02:50:01] vfr: lost time: 0 (0 frames)
+[02:50:01] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[02:50:01] mpeg2video-decoder done: 0 frames, 1 decoder errors
+[02:50:01] sync: got 0 frames, 64941 expected
+[02:50:01] Subtitle track 0 (id 0x20bd) 'English (4:3) [VOBSUB]': 909 hits (0 forced)
+[02:50:01] No candidate detected during subtitle scan
+[02:50:01] Starting Task: Encoding Pass
+[02:50:01] job configuration:
+[02:50:01]  * source
+[02:50:01]    + /Volumes/TNGS7D1
+[02:50:01]    + title 3, chapter(s) 1 to 8
+[02:50:01]  * destination
+[02:50:01]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E03.m4v
+[02:50:01]    + container: MPEG-4 (libavformat)
+[02:50:01]      + align initial A/V stream timestamps
+[02:50:01]      + chapter markers
+[02:50:01]  * video track
+[02:50:01]    + decoder: mpeg2video
+[02:50:01]      + bitrate 200 kbps
+[02:50:01]    + filters
+[02:50:01]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[02:50:01]      + Decomb (mode=39)
+[02:50:01]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[02:50:01]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[02:50:01]      + Crop and Scale (width=704:height=480:crop-top=0:crop-bottom=0:crop-left=8:crop-right=8)
+[02:50:01]        + source: 720 * 480, crop (0/0/8/8): 704 * 480, scale: 704 * 480
+[02:50:01]    + Output geometry
+[02:50:01]      + storage dimensions: 704 x 480
+[02:50:01]      + pixel aspect ratio: 8 : 9
+[02:50:01]      + display dimensions: 625 x 480
+[02:50:01]    + encoder: H.264 (libx264)
+[02:50:01]      + preset:  fast
+[02:50:01]      + profile: main
+[02:50:01]      + level:   4.0
+[02:50:01]      + quality: 22.00 (RF)
+[02:50:01]      + color profile: 6-6-6
+[02:50:01]  * audio track 1
+[02:50:01]    + decoder: English (AC3) (5.1 ch) (448 kbps) (track 1, id 0x80bd)
+[02:50:01]      + bitrate: 448 kbps, samplerate: 48000 Hz
+[02:50:01]    + mixdown: Stereo
+[02:50:01]    + dither: triangular
+[02:50:01]    + encoder: AAC (Apple AudioToolbox)
+[02:50:01]      + bitrate: 160 kbps, samplerate: 48000 Hz
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:50:03] sync: expecting 64941 video frames
+[02:50:03] encx264: min-keyint: 24, keyint: 240
+[02:50:03] encx264: encoding at constant RF 22.000000
+[02:50:03] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=8/9
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[02:50:03] sync: first pts video is 0
+[02:50:03] sync: "Chapter 1" (1) at frame 1 time 0
+[02:50:03] sync: first pts audio 0x80bd is 0
+[02:50:03] 1.976967s: Video -> Film
+[02:50:06] 24.391033s: Film -> Video
+[02:50:06] 24.432745s: Video -> Film
+[02:50:08] 36.736710s: Film -> Video
+[02:50:08] 36.811779s: Video -> Film
+[02:50:11] 61.503113s: Film -> Video
+[02:50:11] 61.569843s: Video -> Film
+[02:50:13] 72.747681s: Film -> Video
+[02:50:13] 74.482742s: Video -> Film
+[02:50:29] 193.326462s: Film -> Video
+[02:50:51] sync: "Chapter 2" (2) at frame 7901 time 27132856
+[02:50:53] 316.290985s: Video -> Film
+[02:50:54] 317.817474s: Film -> Video
+[02:50:54] 320.461823s: Video -> Film
+[02:50:55] 322.822479s: Film -> Video
+[02:50:55] 325.466858s: Video -> Film
+[02:50:56] 327.527191s: Film -> Video
+[02:50:56] 329.862854s: Video -> Film
+[02:50:56] 330.096436s: Film -> Video
+[02:50:57] 332.740784s: Video -> Film
+[02:50:57] 334.133789s: Film -> Video
+[02:50:57] 334.208923s: Video -> Film
+[02:50:57] 334.400726s: Film -> Video
+[02:50:57] 337.045074s: Video -> Film
+[02:50:57] 339.714417s: Film -> Video
+[02:50:57] 339.781158s: Video -> Film
+[02:50:58] 339.972992s: Film -> Video
+[02:50:58] 342.467163s: Video -> Film
+[02:50:58] 343.743408s: Film -> Video
+[02:50:58] 343.785156s: Video -> Film
+[02:50:58] 343.976990s: Film -> Video
+[02:50:59] 346.629669s: Video -> Film
+[02:50:59] 351.951599s: Film -> Video
+[02:50:59] 352.026703s: Video -> Film
+[02:50:59] 352.385376s: Film -> Video
+[02:51:00] 355.029724s: Video -> Film
+[02:51:00] 359.826172s: Film -> Video
+[02:51:01] 362.470490s: Video -> Film
+[02:51:01] 364.639343s: Film -> Video
+[02:51:01] 364.706055s: Video -> Film
+[02:51:01] 365.398346s: Film -> Video
+[02:51:01] 367.875916s: Video -> Film
+[02:51:03] 378.978577s: Film -> Video
+[02:51:03] 379.020355s: Video -> Film
+[02:51:03] 382.882477s: Film -> Video
+[02:51:03] 382.924255s: Video -> Film
+[02:51:04] 387.854126s: Film -> Video
+[02:51:04] 390.498474s: Video -> Film
+[02:51:04] 392.892487s: Film -> Video
+[02:51:04] 392.934326s: Video -> Film
+[02:51:05] 395.294891s: Film -> Video
+[02:51:05] 397.880890s: Video -> Film
+[02:51:06] 403.035950s: Film -> Video
+[02:51:07] 405.872223s: Video -> Film
+[02:51:13] 458.191071s: Film -> Video
+[02:51:13] 458.257782s: Video -> Film
+[02:51:20] 514.447266s: Film -> Video
+[02:51:21] sync: "Chapter 3" (3) at frame 13392 time 46559272
+[02:51:21] 519.026917s: Video -> Film
+[02:51:37] 640.206238s: Film -> Video
+[02:51:37] 644.193665s: Video -> Film
+[02:52:08] 848.881348s: Film -> Video
+[02:52:08] 848.923218s: Video -> Film
+[02:52:11] 864.129944s: Film -> Video
+[02:52:12] sync: "Chapter 4" (4) at frame 21833 time 78045728
+[02:52:12] 871.320557s: Video -> Film
+[02:52:15] 888.487549s: Film -> Video
+[02:52:15] 888.562866s: Video -> Film
+[02:52:22] 948.347351s: Film -> Video
+[02:52:23] 951.333862s: Video -> Film
+[02:52:57] 1246.812256s: Film -> Video
+[02:52:58] 1250.082153s: Video -> Film
+[02:53:01] 1272.763306s: Film -> Video
+[02:53:01] 1275.249146s: Video -> Film
+[02:53:05] 1300.032104s: Film -> Video
+[02:53:05] sync: "Chapter 5" (5) at frame 32390 time 117303952
+[02:53:06] 1305.078979s: Video -> Film
+[02:53:15] 1369.893677s: Film -> Video
+[02:53:15] 1372.880005s: Video -> Film
+[02:53:52] 1650.515503s: Film -> Video
+[02:53:52] 1650.590698s: Video -> Film
+[02:53:52] sync: "Chapter 6" (6) at frame 40743 time 148553170
+[02:53:54] 1668.166626s: Film -> Video
+[02:53:54] 1668.241821s: Video -> Film
+[02:53:54] 1672.270630s: Film -> Video
+[02:53:54] 1672.312500s: Video -> Film
+[02:53:56] 1684.682983s: Film -> Video
+[02:53:56] 1684.758179s: Video -> Film
+[02:53:56] 1686.651611s: Film -> Video
+[02:53:56] 1686.726929s: Video -> Film
+[02:53:57] 1693.024902s: Film -> Video
+[02:53:57] 1693.099854s: Video -> Film
+[02:53:57] 1696.528198s: Film -> Video
+[02:53:57] 1696.570190s: Video -> Film
+[02:53:58] 1704.169067s: Film -> Video
+[02:53:58] 1704.244385s: Video -> Film
+[02:54:13] 1813.253296s: Film -> Video
+[02:54:13] 1813.294922s: Video -> Film
+[02:54:14] 1819.759766s: Film -> Video
+[02:54:14] 1819.826538s: Video -> Film
+[02:54:15] 1827.083740s: Film -> Video
+[02:54:15] 1827.167236s: Video -> Film
+[02:54:30] 1945.476807s: Film -> Video
+[02:54:30] 1948.455078s: Video -> Film
+[02:54:48] 2072.704102s: Film -> Video
+[02:54:48] sync: "Chapter 7" (7) at frame 50976 time 186811394
+[02:54:49] 2077.817627s: Video -> Film
+[02:55:06] 2196.194092s: Film -> Video
+[02:55:06] 2196.269287s: Video -> Film
+[02:55:16] sync: "Chapter 8" (8) at frame 55631 time 204233299
+[02:55:35] 2409.974121s: Film -> Video
+[02:55:35] 2410.016113s: Video -> Film
+[02:55:41] 2452.817139s: Film -> Video
+[02:55:41] 2452.892334s: Video -> Film
+[02:56:00] 2586.383789s: Film -> Video
+[02:56:01] 2595.409424s: Video -> Film
+[02:56:05] 2623.687744s: Film -> Video
+[02:56:05] 2623.729492s: Video -> Film
+[02:56:08] 2649.146484s: Film -> Video
+[02:56:18] reader: done. 10 scr changes
+[02:56:19] work: average encoding speed for job is 177.590164 fps
+[02:56:19] comb detect: heavy 1684 | light 940 | uncombed 64034 | total 66658
+[02:56:19] decomb: deinterlaced 1684 | blended 940 | unfiltered 64034 | total 66658
+[02:56:19] vfr: 66658 frames output, 0 dropped and 0 duped for CFR/PFR
+[02:56:19] vfr: lost time: 0 (0 frames)
+[02:56:19] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[02:56:19] ac3-decoder done: 84729 frames, 0 decoder errors
+[02:56:19] mpeg2video-decoder done: 66658 frames, 0 decoder errors
+[02:56:19] sync: got 66658 frames, 64941 expected
+[02:56:19] sync: framerate min 17.195 fps, max 39.964 fps, avg 24.585 fps
+x264 [info]: frame I:649   Avg QP:17.37  size: 16780
+x264 [info]: frame P:18111 Avg QP:20.77  size:  3571
+x264 [info]: frame B:47898 Avg QP:22.40  size:  1052
+x264 [info]: consecutive B-frames:  2.8%  2.8%  4.4% 90.0%
+x264 [info]: mb I  I16..4: 45.1%  0.0% 54.9%
+x264 [info]: mb P  I16..4:  3.6%  0.0%  1.5%  P16..4: 40.5% 11.2%  7.7%  0.0%  0.0%    skip:35.5%
+x264 [info]: mb B  I16..4:  2.8%  0.0%  0.1%  B16..8: 17.2%  2.6%  0.1%  direct:11.3%  skip:66.0%  L0:44.4% L1:50.3% BI: 5.3%
+x264 [info]: coded y,uvDC,uvAC intra: 23.8% 64.4% 19.9% inter: 4.3% 21.4% 1.0%
+x264 [info]: i16 v,h,dc,p: 39% 24% 18% 19%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 24% 23%  5%  5%  5%  6%  4%  4%
+x264 [info]: i8c dc,h,v,p: 59% 19% 17%  4%
+x264 [info]: Weighted P-Frames: Y:4.4% UV:2.5%
+x264 [info]: ref P L0: 62.2% 37.8%
+x264 [info]: ref B L0: 76.8% 23.2%
+x264 [info]: ref B L1: 93.7%  6.3%
+x264 [info]: kb/s:371.58
+[02:56:19] mux: track 0, 66658 frames, 125908101 bytes, 371.50 kbps, fifo 8192
+[02:56:19] mux: track 1, 127096 frames, 55828669 bytes, 164.72 kbps, fifo 16384
+[02:56:19] Finished work at: Thu Nov 26 02:56:19 2020
+
+[02:56:19] libhb: work result = 0
+[02:56:19] macgui: QueueCore work done
+[02:56:19] macgui: QueueCore scanning specifically for title: 4
+[02:56:19] CPU: Intel(R) Core(TM) i7-4850HQ CPU @ 2.30GHz
+[02:56:19]  - Intel microarchitecture Haswell
+[02:56:19]  - logical processor count: 8
+[02:56:19] hb_scan: path=/Volumes/TNGS7D1, title_index=4
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/Volumes/TNGS7D1/) failed
+[02:56:19] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+[02:56:19] scan: DVD has 5 title(s)
+[02:56:19] scan: scanning title 4
+[02:56:20] scan: duration is 00:45:08 (2708266 ms)
+[02:56:20] pgc_id: 4, pgn: 1: pgc: 0x7f8654e0f3d0
+[02:56:20] scan: checking audio 1
+[02:56:20] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[02:56:20] scan: checking audio 2
+[02:56:20] scan: id=0x81bd, lang=English (AC3), 3cc=eng ext=1
+[02:56:20] scan: checking subtitle 1
+[02:56:20] scan: id=0x20bd, lang=English (4:3) [VOBSUB], 3cc=eng ext=1
+[02:56:20] scan: title 4 has 8 chapters
+[02:56:20] scan: chap 1, 417933 ms
+[02:56:20] scan: chap 2, 161834 ms
+[02:56:20] scan: chap 3, 267367 ms
+[02:56:20] scan: chap 4, 241734 ms
+[02:56:20] scan: chap 5, 371166 ms
+[02:56:20] scan: chap 6, 544467 ms
+[02:56:20] scan: chap 7, 354166 ms
+[02:56:20] scan: chap 8, 349600 ms
+[02:56:20] scan: aspect = 4:3
+[02:56:20] scan: decoding previews for title 4
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:56:21] scan: title angle(s) 1
+[02:56:21] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=448000 English (AC3) (5.1 ch) (448 kbps)
+[02:56:21] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[02:56:22] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/2/8, aspect 4:3, PAR 8:9
+[02:56:22] libhb: scan thread found 1 valid title(s)
+[02:56:22] macgui: QueueCore scan done
+[02:56:22] macgui: QueueCore started encoding NEXTGEN_S07_E04.m4v
+[02:56:22] Starting work at: Thu Nov 26 02:56:22 2020
+
+[02:56:22] macgui: QueueCore with preset Fast 1080p30
+[02:56:22] 1 job(s) to process
+[02:56:22] Starting Task: Subtitle Scan
+[02:56:22] job configuration:
+[02:56:22]  * source
+[02:56:22]    + /Volumes/TNGS7D1
+[02:56:22]    + title 4, chapter(s) 1 to 8
+[02:56:22]  * destination
+[02:56:22]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E04.m4v
+[02:56:22]    + container: MPEG-4 (libavformat)
+[02:56:22]      + align initial A/V stream timestamps
+[02:56:22]      + chapter markers
+[02:56:22]  * video track
+[02:56:22]    + decoder: mpeg2video
+[02:56:22]      + bitrate 200 kbps
+[02:56:22]    + filters
+[02:56:22]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[02:56:22]      + Decomb (mode=39)
+[02:56:22]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[02:56:22]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[02:56:22]      + Crop and Scale (width=710:height=480:crop-top=0:crop-bottom=0:crop-left=2:crop-right=8)
+[02:56:22]        + source: 720 * 480, crop (0/0/2/8): 710 * 480, scale: 710 * 480
+[02:56:22]    + Output geometry
+[02:56:22]      + storage dimensions: 710 x 480
+[02:56:22]      + pixel aspect ratio: 8 : 9
+[02:56:22]      + display dimensions: 631 x 480
+[02:56:22]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[02:56:22]    + subtitle, English (4:3) [VOBSUB] (track 0, id 0x20bd, Picture)
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[02:56:24] sync: expecting 64933 video frames
+[03:01:36] reader: done. 10 scr changes
+[03:01:36] work: average encoding speed for job is 0.000000 fps
+[03:01:36] comb detect: heavy 0 | light 0 | uncombed 0 | total 0
+[03:01:36] decomb: deinterlaced 0 | blended 0 | unfiltered 0 | total 0
+[03:01:36] vfr: 0 frames output, 0 dropped and 0 duped for CFR/PFR
+[03:01:36] vfr: lost time: 0 (0 frames)
+[03:01:36] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[03:01:36] mpeg2video-decoder done: 0 frames, 1 decoder errors
+[03:01:36] sync: got 0 frames, 64933 expected
+[03:01:36] Subtitle track 0 (id 0x20bd) 'English (4:3) [VOBSUB]': 860 hits (0 forced)
+[03:01:36] No candidate detected during subtitle scan
+[03:01:36] Starting Task: Encoding Pass
+[03:01:36] job configuration:
+[03:01:36]  * source
+[03:01:36]    + /Volumes/TNGS7D1
+[03:01:36]    + title 4, chapter(s) 1 to 8
+[03:01:36]  * destination
+[03:01:36]    + /Users/michaelalbinson/Desktop/net-new/Star Trek The Next Generation/Season 7/NEXTGEN_S07_E04.m4v
+[03:01:36]    + container: MPEG-4 (libavformat)
+[03:01:36]      + align initial A/V stream timestamps
+[03:01:36]      + chapter markers
+[03:01:36]  * video track
+[03:01:36]    + decoder: mpeg2video
+[03:01:36]      + bitrate 200 kbps
+[03:01:36]    + filters
+[03:01:36]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[03:01:36]      + Decomb (mode=39)
+[03:01:36]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[03:01:36]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[03:01:36]      + Crop and Scale (width=710:height=480:crop-top=0:crop-bottom=0:crop-left=2:crop-right=8)
+[03:01:36]        + source: 720 * 480, crop (0/0/2/8): 710 * 480, scale: 710 * 480
+[03:01:36]    + Output geometry
+[03:01:36]      + storage dimensions: 710 x 480
+[03:01:36]      + pixel aspect ratio: 8 : 9
+[03:01:36]      + display dimensions: 631 x 480
+[03:01:36]    + encoder: H.264 (libx264)
+[03:01:36]      + preset:  fast
+[03:01:36]      + profile: main
+[03:01:36]      + level:   4.0
+[03:01:36]      + quality: 22.00 (RF)
+[03:01:36]      + color profile: 6-6-6
+[03:01:36]  * audio track 1
+[03:01:36]    + decoder: English (AC3) (5.1 ch) (448 kbps) (track 1, id 0x80bd)
+[03:01:36]      + bitrate: 448 kbps, samplerate: 48000 Hz
+[03:01:36]    + mixdown: Stereo
+[03:01:36]    + dither: triangular
+[03:01:36]    + encoder: AAC (Apple AudioToolbox)
+[03:01:36]      + bitrate: 160 kbps, samplerate: 48000 Hz
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000131
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000001d6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000247
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x00000298
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x00008894
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 0
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/TNGS7D1 for CSS authentication
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[03:01:38] sync: expecting 64933 video frames
+[03:01:38] encx264: min-keyint: 24, keyint: 240
+[03:01:38] encx264: encoding at constant RF 22.000000
+[03:01:38] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=8/9
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[03:01:38] sync: first pts video is 0
+[03:01:38] sync: "Chapter 1" (1) at frame 1 time 0
+[03:01:38] sync: first pts audio 0x80bd is 0
+[03:01:38] 2.210533s: Video -> Film
+[03:01:41] 19.352667s: Film -> Video
+[03:01:41] 19.394367s: Video -> Film
+[03:02:11] 244.177261s: Film -> Video
+[03:02:11] 244.252335s: Video -> Film
+[03:02:12] 248.147919s: Film -> Video
+[03:02:12] 248.189606s: Video -> Film
+[03:02:20] 309.200562s: Film -> Video
+[03:02:43] sync: "Chapter 2" (2) at frame 10700 time 37652364
+[03:02:46] 430.897156s: Video -> Film
+[03:02:46] 432.965881s: Film -> Video
+[03:02:46] 435.610168s: Video -> Film
+[03:02:47] 440.506744s: Film -> Video
+[03:02:48] 442.984222s: Video -> Film
+[03:02:48] 446.012207s: Film -> Video
+[03:02:49] 448.531433s: Video -> Film
+[03:02:49] 450.516724s: Film -> Video
+[03:02:49] 452.994232s: Video -> Film
+[03:02:50] 455.521729s: Film -> Video
+[03:02:50] 458.040924s: Video -> Film
+[03:02:50] 460.526764s: Film -> Video
+[03:02:51] 463.045898s: Video -> Film
+[03:02:51] 466.032227s: Film -> Video
+[03:02:52] 468.551422s: Video -> Film
+[03:02:52] 471.037231s: Film -> Video
+[03:02:52] 473.556458s: Video -> Film
+[03:02:53] 476.576080s: Film -> Video
+[03:02:53] 479.053589s: Video -> Film
+[03:02:53] 480.413239s: Film -> Video
+[03:02:54] 483.082611s: Video -> Film
+[03:02:55] 490.965515s: Film -> Video
+[03:02:55] 493.601471s: Video -> Film
+[03:02:55] 496.963104s: Film -> Video
+[03:02:55] 497.038208s: Video -> Film
+[03:02:56] 505.238037s: Film -> Video
+[03:02:57] 507.882385s: Video -> Film
+[03:02:58] 517.250061s: Film -> Video
+[03:02:59] 519.894409s: Video -> Film
+[03:03:07] sync: "Chapter 3" (3) at frame 14859 time 52230432
+[03:03:34] 781.288879s: Film -> Video
+[03:03:34] 781.322205s: Video -> Film
+[03:03:36] 795.669983s: Film -> Video
+[03:03:36] 795.703308s: Video -> Film
+[03:03:38] 805.129333s: Film -> Video
+[03:03:38] 805.171082s: Video -> Film
+[03:03:42] 842.107910s: Film -> Video
+[03:03:42] 842.183044s: Video -> Film
+[03:03:43] 844.543762s: Film -> Video
+[03:03:43] sync: "Chapter 4" (4) at frame 21298 time 76318997
+[03:03:45] 854.904114s: Video -> Film
+[03:03:46] 867.266418s: Film -> Video
+[03:03:46] 867.341492s: Video -> Film
+[03:03:53] 919.385254s: Film -> Video
+[03:03:53] 923.372559s: Video -> Film
+[03:04:06] 993.859558s: Film -> Video
+[03:04:06] 995.236023s: Video -> Film
+[03:04:06] 996.862549s: Film -> Video
+[03:04:06] 997.304688s: Video -> Film
+[03:04:06] 997.496521s: Film -> Video
+[03:04:06] 997.538330s: Video -> Film
+[03:04:07] 999.231567s: Film -> Video
+[03:04:07] 999.632019s: Video -> Film
+[03:04:07] 999.898926s: Film -> Video
+[03:04:07] 1000.507935s: Video -> Film
+[03:04:07] 1001.200195s: Film -> Video
+[03:04:07] 1001.742493s: Video -> Film
+[03:04:08] 1002.935303s: Film -> Video
+[03:04:08] 1003.210693s: Video -> Film
+[03:04:08] 1003.902954s: Film -> Video
+[03:04:08] 1004.211670s: Video -> Film
+[03:04:08] 1006.138489s: Film -> Video
+[03:04:08] 1006.180237s: Video -> Film
+[03:04:11] 1025.691406s: Film -> Video
+[03:04:11] 1026.033447s: Video -> Film
+[03:04:11] 1026.892578s: Film -> Video
+[03:04:11] 1027.401489s: Video -> Film
+[03:04:11] 1027.660034s: Film -> Video
+[03:04:12] 1029.003052s: Video -> Film
+[03:04:12] 1031.196777s: Film -> Video
+[03:04:12] 1032.106079s: Video -> Film
+[03:04:13] 1033.799438s: Film -> Video
+[03:04:13] 1034.275024s: Video -> Film
+[03:04:13] 1034.967285s: Film -> Video
+[03:04:13] 1035.876587s: Video -> Film
+[03:04:14] 1037.436401s: Film -> Video
+[03:04:14] 1038.779541s: Video -> Film
+[03:04:14] 1040.305908s: Film -> Video
+[03:04:14] 1040.915039s: Video -> Film
+[03:04:15] 1042.407959s: Film -> Video
+[03:04:15] 1042.691772s: Video -> Film
+[03:04:15] 1043.175415s: Film -> Video
+[03:04:15] 1045.352661s: Video -> Film
+[03:04:16] 1047.062744s: Film -> Video
+[03:04:16] 1047.104492s: Video -> Film
+[03:04:16] 1047.546509s: Film -> Video
+[03:04:16] 1048.530884s: Video -> Film
+[03:04:16] 1049.014648s: Film -> Video
+[03:04:16] 1049.323364s: Video -> Film
+[03:04:17] 1051.216797s: Film -> Video
+[03:04:17] 1051.492310s: Video -> Film
+[03:04:17] 1053.218872s: Film -> Video
+[03:04:17] 1053.494263s: Video -> Film
+[03:04:17] 1054.520142s: Film -> Video
+[03:04:18] 1056.505615s: Video -> Film
+[03:04:18] 1057.689941s: Film -> Video
+[03:04:18] 1058.040405s: Video -> Film
+[03:04:19] 1061.560547s: Film -> Video
+[03:04:19] 1063.170532s: Video -> Film
+[03:04:20] 1065.339233s: Film -> Video
+[03:04:20] 1065.372681s: Video -> Film
+[03:04:20] 1065.898193s: Film -> Video
+[03:04:20] 1066.890869s: Video -> Film
+[03:04:22] 1076.675537s: Film -> Video
+[03:04:22] 1076.759033s: Video -> Film
+[03:04:23] 1078.077026s: Film -> Video
+[03:04:23] 1081.055054s: Video -> Film
+[03:04:24] 1087.186157s: Film -> Video
+[03:04:25] sync: "Chapter 5" (5) at frame 27346 time 98096750
+[03:04:25] 1091.832397s: Video -> Film
+[03:04:31] 1128.936157s: Film -> Video
+[03:04:32] 1133.507324s: Video -> Film
+[03:04:33] 1136.034912s: Film -> Video
+[03:04:33] 1136.109985s: Video -> Film
+[03:04:35] 1150.082275s: Film -> Video
+[03:04:35] 1152.593140s: Video -> Film
+[03:04:38] 1174.840332s: Film -> Video
+[03:04:38] 1174.915527s: Video -> Film
+[03:04:41] 1190.597778s: Film -> Video
+[03:04:42] 1195.561035s: Video -> Film
+[03:04:54] 1285.384033s: Film -> Video
+[03:04:55] 1291.365112s: Video -> Film
+[03:05:00] 1318.617310s: Film -> Video
+[03:05:00] 1318.692505s: Video -> Film
+[03:05:12] 1388.854126s: Film -> Video
+[03:05:12] 1388.929199s: Video -> Film
+[03:05:12] 1391.790405s: Film -> Video
+[03:05:12] 1391.865479s: Video -> Film
+[03:05:12] 1393.925903s: Film -> Video
+[03:05:12] 1394.000977s: Video -> Film
+[03:05:13] 1398.130127s: Film -> Video
+[03:05:13] 1398.196777s: Video -> Film
+[03:05:15] 1411.985596s: Film -> Video
+[03:05:15] 1412.052368s: Video -> Film
+[03:05:17] 1426.216431s: Film -> Video
+[03:05:17] 1426.299927s: Video -> Film
+[03:05:21] 1452.159058s: Film -> Video
+[03:05:21] 1452.192505s: Video -> Film
+[03:05:22] sync: "Chapter 6" (6) at frame 36402 time 131535154
+[03:05:22] 1461.526733s: Film -> Video
+[03:05:23] 1463.470337s: Video -> Film
+[03:05:35] 1549.723145s: Film -> Video
+[03:05:35] 1551.858643s: Video -> Film
+[03:05:36] 1557.322510s: Film -> Video
+[03:05:36] 1557.397461s: Video -> Film
+[03:05:38] 1564.829834s: Film -> Video
+[03:05:38] 1564.871704s: Video -> Film
+[03:06:03] 1734.366089s: Film -> Video
+[03:06:03] 1734.407593s: Video -> Film
+[03:06:05] 1745.118408s: Film -> Video
+[03:06:06] 1750.190063s: Video -> Film
+[03:06:11] 1789.212402s: Film -> Video
+[03:06:11] 1789.254272s: Video -> Film
+[03:06:14] 1810.316772s: Film -> Video
+[03:06:15] 1815.288574s: Video -> Film
+[03:06:41] 2003.601562s: Film -> Video
+[03:06:42] sync: "Chapter 7" (7) at frame 49575 time 180586159
+[03:06:42] 2008.014404s: Video -> Film
+[03:06:45] 2022.729126s: Film -> Video
+[03:06:45] 2022.762451s: Video -> Film
+[03:06:46] 2031.562866s: Film -> Video
+[03:06:46] 2031.604614s: Video -> Film
+[03:06:51] 2070.902344s: Film -> Video
+[03:06:51] 2070.944092s: Video -> Film
+[03:06:51] 2072.637207s: Film -> Video
+[03:06:51] 2072.712402s: Video -> Film
+[03:06:52] 2074.639404s: Film -> Video
+[03:06:52] 2074.681152s: Video -> Film
+[03:07:00] 2134.106934s: Film -> Video
+[03:07:00] 2134.140381s: Video -> Film
+[03:07:01] 2140.171387s: Film -> Video
+[03:07:02] 2144.217041s: Video -> Film
+[03:07:17] 2257.021484s: Film -> Video
+[03:07:17] 2257.096436s: Video -> Film
+[03:07:19] 2266.831299s: Film -> Video

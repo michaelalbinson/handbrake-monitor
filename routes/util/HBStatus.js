@@ -1,5 +1,6 @@
 'use strict';
 
+
 const RIP_PROGRESS_CONSTANTS = {
 	ENCODE_STARTED: "QueueCore started encoding ",
 	ENCODE_ENDED: "QueueCore scan done",
@@ -12,7 +13,7 @@ const RIP_PROGRESS_CONSTANTS = {
 
 const RIP_REGEXPS = {
 	CHAPTER_PROGRESS: /sync: "Chapter .* at frame/i,
-	TITLE_NUMBER: /title 1, chapter\(s\) 1 to \d{1,2}/i
+	TITLE_NUMBER: /title \d{1,2}, chapter\(s\) 1 to \d{1,2}/i
 }
 
 const STATUS = {
