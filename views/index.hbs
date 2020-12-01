@@ -9,25 +9,28 @@
         <td>Current Encode</td>
         <td>Start Time</td>
         <td>End Time</td>
+        <td>ETA</td>
     </tr>
     </thead>
     <tbody>
         <tr>
             <td>{{host}}</td>
-            <td><span class="{{status}}"></span></td>
+            <td><span class="circle {{status}}"></span></td>
             <td>{{statusText}}</td>
             <td>{{currentEncode}}</td>
             <td>{{startTime}}</td>
             <td>{{endTime}}</td>
+            <td>{{eta}}</td>
         </tr>
         {{#each peerStatuses}}
             <tr>
                 <td>[PEER] - {{this.hostname}}</td>
-                <td><span class="{{this.status}}"></span></td>
+                <td><span class="circle {{this.status}}"></span></td>
                 <td>{{this.statusText}}</td>
                 <td>{{this.currentEncode}}</td>
                 <td>{{this.startTime}}</td>
                 <td>{{this.endTime}}</td>
+                <td>{{this.eta}}</td>
             </tr>
         {{/each}}
     </tbody>

@@ -4,15 +4,24 @@ const RIP_PROGRESS_CONSTANTS = {
 	ENCODE_STARTED: "QueueCore started encoding ",
 	ENCODE_ENDED: "QueueCore scan done",
 	SCAN_STARTED: 'ScanCore trying to open a physical disc at',
-	QUEUE_COMPLETE: "QueueCore work done",
-	QUEUE_SCANNED_READY: "ScanCore scan done"
+	QUEUE_SCANNED_READY: "ScanCore scan done",
+	ENCODING_PASS_STARTED: "Starting Task: Encoding Pass",
+	SUB_SCAN_STARTED: "Starting Task: Subtitle Scan",
+	QUEUE_COMPLETE: "QueueCore work done"
 };
+
+const RIP_REGEXPS = {
+	CHAPTER_PROGRESS: /sync: "Chapter .* at frame/i,
+	TITLE_NUMBER: /title 1, chapter\(s\) 1 to \d{1,2}/i
+}
 
 const STATUS = {
 	SCAN_COMPLETE: 'Scan Complete - Idle',
 	QUEUE_COMPLETE: 'Queue Complete - Idle',
 	SCANNING: 'Scanning 📀',
 	RIPPING: 'Ripping 🍹',
+	RIPPING_ENCODING: 'Ripping - Encoding 🍹',
+	RIPPING_SUB_SCAN: 'Ripping - Subtitle Scan 🍹',
 	PEER_UNAVAILABLE: '🚨 Peer Unavailable 🚨'
 }
 
@@ -23,5 +32,6 @@ for (let key in STATUS)
 module.exports = {
 	STATUS,
 	REVERSE_STATUS_LOOKUP,
-	RIP_PROGRESS_CONSTANTS
+	RIP_PROGRESS_CONSTANTS,
+	RIP_REGEXPS
 };

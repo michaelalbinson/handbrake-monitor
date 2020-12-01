@@ -12,7 +12,7 @@ module.exports = app => {
 		let peerStatuses;
 		PeerFetcher.fetchPeerStatuses().then(peerS => {
 			peerStatuses = peerS;
-			return FileReader.getHBStatusItems();
+			return new FileReader().getHBStatusItems();
 		}).then(hostStatus => {
 			res.render('index', {
 				title: '🍹 | Dashboard',
@@ -23,6 +23,7 @@ module.exports = app => {
 				endTime: hostStatus.endTime,
 				activity: hostStatus.activity,
 				currentEncode: hostStatus.currentEncode,
+				eta: hostStatus.eta,
 				peerStatuses
 			});
 		}).catch(e => {
@@ -32,15 +33,16 @@ module.exports = app => {
 	});
 
 	app.get('/checkup', (req, res) => {
-		FileReader.getHBStatusItems().then(status => {
+		new FileReader().getHBStatusItems().then(status => {
 			res.send({
 				success: true,
-				host: HOST_NAME,
+				hostname: HOST_NAME,
 				status: status.status,
 				statusText: status.statusText,
 				startTime: status.startTime,
 				endTime: status.endTime,
 				activity: status.activity,
+				eta: status.eta,
 				currentEncode: status.currentEncode,
 			});
 		}).catch(e => {
