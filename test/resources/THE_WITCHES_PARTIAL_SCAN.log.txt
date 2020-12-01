@@ -1,0 +1,95 @@
+[00:41:00] macgui: ScanCore trying to open a physical disc at: /Volumes/THE_WITCHES_16X9_FF_BUDGET_NA
+[00:41:00] macgui: ScanCore library found for decrypting physical disc
+[00:41:00] macgui: ScanCore scanning titles with a duration of 10 seconds or more
+[00:41:00] CPU: Intel(R) Core(TM) i9-8950HK CPU @ 2.90GHz
+[00:41:00]  - Intel microarchitecture Kaby Lake
+[00:41:00]  - logical processor count: 12
+[00:41:00] hb_scan: path=/Volumes/THE_WITCHES_16X9_FF_BUDGET_NA, title_index=0
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/Volumes/THE_WITCHES_16X9_FF_BUDGET_NA/) failed
+[00:41:00] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/THE_WITCHES_16X9_FF_BUDGET_NA for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/THE_WITCHES_16X9_FF_BUDGET_NA for CSS authentication
+[00:41:01] scan: DVD has 3 title(s)
+[00:41:01] scan: scanning title 1
+[00:41:01] scan: duration is 01:31:30 (5490100 ms)
+[00:41:01] pgc_id: 1, pgn: 1: pgc: 0x7f9aeee5ee30
+[00:41:01] scan: checking audio 1
+[00:41:01] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[00:41:01] scan: checking audio 2
+[00:41:01] scan: id=0x81bd, lang=Francais (AC3), 3cc=fra ext=0
+[00:41:01] scan: title 1 has 30 chapters
+[00:41:01] scan: chap 1, 130166 ms
+[00:41:01] scan: chap 2, 153867 ms
+[00:41:01] scan: chap 3, 242166 ms
+[00:41:01] scan: chap 4, 170166 ms
+[00:41:01] scan: chap 5, 137000 ms
+[00:41:01] scan: chap 6, 183667 ms
+[00:41:01] scan: chap 7, 136133 ms
+[00:41:01] scan: chap 8, 157867 ms
+[00:41:01] scan: chap 9, 239333 ms
+[00:41:01] scan: chap 10, 184400 ms
+[00:41:01] scan: chap 11, 227100 ms
+[00:41:01] scan: chap 12, 71133 ms
+[00:41:01] scan: chap 13, 272800 ms
+[00:41:01] scan: chap 14, 258734 ms
+[00:41:01] scan: chap 15, 152934 ms
+[00:41:01] scan: chap 16, 273900 ms
+[00:41:01] scan: chap 17, 255000 ms
+[00:41:01] scan: chap 18, 198500 ms
+[00:41:01] scan: chap 19, 138800 ms
+[00:41:01] scan: chap 20, 317867 ms
+[00:41:01] scan: chap 21, 140166 ms
+[00:41:01] scan: chap 22, 95734 ms
+[00:41:01] scan: chap 23, 239333 ms
+[00:41:01] scan: chap 24, 104834 ms
+[00:41:01] scan: chap 25, 83433 ms
+[00:41:01] scan: chap 26, 193967 ms
+[00:41:01] scan: chap 27, 253433 ms
+[00:41:01] scan: chap 28, 136734 ms
+[00:41:01] scan: chap 29, 207033 ms
+[00:41:01] scan: chap 30, 133900 ms
+[00:41:01] scan: aspect = 4:3
+[00:41:01] scan: scanning title 2
+[00:41:01] scan: duration is 00:00:17 (17000 ms)
+[00:41:01] pgc_id: 2, pgn: 1: pgc: 0x7f9a7f3549b0
+[00:41:01] scan: checking audio 1
+[00:41:01] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[00:41:01] scan: checking audio 2
+[00:41:01] scan: id=0x81bd, lang=Francais (AC3), 3cc=fra ext=0
+[00:41:01] scan: title 2 has 1 chapters
+[00:41:01] scan: chap 1, 17000 ms
+[00:41:01] scan: aspect = 4:3
+[00:41:01] scan: scanning title 3
+[00:41:01] scan: duration is 00:00:32 (32033 ms)
+[00:41:01] pgc_id: 3, pgn: 1: pgc: 0x7f9a7f4e5a40
+[00:41:01] scan: checking audio 1
+[00:41:01] scan: audio channel is not active
+[00:41:01] scan: checking audio 2
+[00:41:01] scan: audio channel is not active
+[00:41:01] scan: title 3 has 1 chapters
+[00:41:01] scan: chap 1, 32033 ms
+[00:41:01] scan: aspect = 4:3
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x00000145
+libdvdread: Elapsed time 1
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x00000252
+libdvdread: Elapsed time 0
+libdvdread: Found 1 VTS's
+libdvdread: Elapsed time 1
+[00:41:06] scan: decoding previews for title 1
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+[00:41:06] scan: title angle(s) 1
+[00:41:07] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 Francais (AC3) (2.0 ch) (Dolby Surround) (192 kbps)
+[00:41:07] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (192 kbps)
+[00:41:09] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/2/2, aspect 4:3, PAR 8:9
+[00:41:09] scan: decoding previews for title 2

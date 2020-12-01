@@ -24,7 +24,7 @@
         </tr>
         {{#each peerStatuses}}
             <tr>
-                <td>[PEER] - {{this.hostname}}</td>
+                <td><strong style="color:lightgreen">[PEER]</strong> - {{this.hostname}}</td>
                 <td><span class="circle {{this.status}}"></span></td>
                 <td>{{this.statusText}}</td>
                 <td>{{this.currentEncode}}</td>

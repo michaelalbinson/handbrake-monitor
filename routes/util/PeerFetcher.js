@@ -5,6 +5,11 @@ const config = require('../../config/properties.json');
 const { STATUS } = require('./HBStatus');
 
 class PeerFetcher {
+	/**
+	 * Fetch the status of each peer HandBrake server, as enumerated in the properties.json configuration file,
+	 * and return all of them.
+	 * @returns {Promise<[{}]>} An array containing the JSON status for each peer server
+	 */
 	static fetchPeerStatuses() {
 		const responses = [];
 		const promises = config.peers.map(peerURL => {

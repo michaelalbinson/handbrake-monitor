@@ -21,6 +21,11 @@ describe('FileReader', () => {
 			expect(fr.padWithZeros(33)).to.equal('33');
 			expect(fr.padWithZeros(99)).to.equal('99');
 		});
+
+		it('should not pad negatives', () => {
+			expect(fr.padWithZeros(-1)).to.equal('-1');
+			expect(fr.padWithZeros(-10)).to.equal('-10');
+		});
 	});
 
 	/**
@@ -79,6 +84,8 @@ describe('FileReader', () => {
 				expect(status.endTime).to.equal('');
 				expect(status.statusText).to.equal(STATUS.RIPPING_ENCODING);
 				expect(status.status).to.equal(REVERSE_STATUS_LOOKUP[STATUS.RIPPING_ENCODING]);
+
+				// this flaps for some reason, worth figuring out at some point, I suppose
 				expect(status.eta).to.equal('00:00:12');
 			});
 		});
@@ -92,6 +99,30 @@ describe('FileReader', () => {
 				expect(status.statusText).to.equal(STATUS.RIPPING_SUB_SCAN);
 				expect(status.status).to.equal(REVERSE_STATUS_LOOKUP[STATUS.RIPPING_SUB_SCAN]);
 				expect(status.eta).to.equal('~');
+			});
+		});
+
+		it('should report status SCANNING during initial scan', () => {
+			const fr = new FileReader(path.join(__dirname, 'resources', 'THE_WITCHES_PARTIAL_SCAN.log.txt'), getTestDate(0, 44, 0));
+			return fr.getHBStatusItems().then(status => {
+				expect(status.currentEncode).to.equal('');
+				expect(status.startTime).to.equal('');
+				expect(status.endTime).to.equal('');
+				expect(status.statusText).to.equal(STATUS.SCANNING);
+				expect(status.status).to.equal(REVERSE_STATUS_LOOKUP[STATUS.SCANNING]);
+				expect(status.eta).to.equal('');
+			});
+		});
+
+		it('should report status SCAN_COMPLETE after initial scan', () => {
+			const fr = new FileReader(path.join(__dirname, 'resources', 'THE_WITCHES_FULL_SCAN.log.txt'), getTestDate(0, 44, 0));
+			return fr.getHBStatusItems().then(status => {
+				expect(status.currentEncode).to.equal('');
+				expect(status.startTime).to.equal('');
+				expect(status.endTime).to.equal('');
+				expect(status.statusText).to.equal(STATUS.SCAN_COMPLETE);
+				expect(status.status).to.equal(REVERSE_STATUS_LOOKUP[STATUS.SCAN_COMPLETE]);
+				expect(status.eta).to.equal('');
 			});
 		});
 	});
