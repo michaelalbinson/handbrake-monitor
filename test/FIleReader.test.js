@@ -125,5 +125,17 @@ describe('FileReader', () => {
 				expect(status.eta).to.equal('');
 			});
 		});
+
+		it('should report status SCAN_COMPLETE after initial scan II', () => {
+			const fr = new FileReader(path.join(__dirname, 'resources', 'HOME_ALONE_SCAN.log.txt'), getTestDate(0, 44, 0));
+			return fr.getHBStatusItems().then(status => {
+				expect(status.currentEncode).to.equal('');
+				expect(status.startTime).to.equal('');
+				expect(status.endTime).to.equal('');
+				expect(status.statusText).to.equal(STATUS.SCAN_COMPLETE);
+				expect(status.status).to.equal(REVERSE_STATUS_LOOKUP[STATUS.SCAN_COMPLETE]);
+				expect(status.eta).to.equal('');
+			});
+		});
 	});
 });

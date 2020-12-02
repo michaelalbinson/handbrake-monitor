@@ -19,7 +19,8 @@ const RIP_REGEXPS = {
 
 // status types and human-readable text representations
 const STATUS = {
-	SCAN_COMPLETE:    'Queue Complete - Idle',
+	QUEUE_COMPLETE:   'Queue Complete - Idle',
+	SCAN_COMPLETE:    'Scan Complete - Idle',
 	SCANNING:         '📀 Scanning',
 	RIPPING:          '🍹 Ripping',
 	RIPPING_ENCODING: '🍹 Ripping - Encoding',

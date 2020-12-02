@@ -1,0 +1,134 @@
+[19:27:01] macgui: ScanCore trying to open a physical disc at: /Volumes/HOME
+[19:27:01] macgui: ScanCore library found for decrypting physical disc
+[19:27:01] macgui: ScanCore scanning titles with a duration of 10 seconds or more
+[19:27:01] CPU: Intel(R) Core(TM) i9-8950HK CPU @ 2.90GHz
+[19:27:01]  - Intel microarchitecture Kaby Lake
+[19:27:01]  - logical processor count: 12
+[19:27:01] hb_scan: path=/Volumes/HOME, title_index=0
+disc.c:424: error opening file BDMV/index.bdmv
+disc.c:424: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2585: nav_get_title_list(/Volumes/HOME/) failed
+[19:27:01] bd: not a bd - trying as a stream/file instead
+libdvdnav: Using dvdnav version 6.0.1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/HOME for CSS authentication
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+libdvdnav: vm: dvd_read_name failed
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+
+libdvdread: Attempting to retrieve all CSS keys
+libdvdread: This can take a _long_ time, please be patient
+
+libdvdread: Get key for /VIDEO_TS/VIDEO_TS.VOB at 0x00000124
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_0.VOB at 0x000013aa
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_01_1.VOB at 0x000017c6
+libdvdread: Elapsed time 0
+libdvdread: Get key for /VIDEO_TS/VTS_02_0.VOB at 0x0020dc7a
+libdvdread: Elapsed time 1
+libdvdread: Get key for /VIDEO_TS/VTS_02_1.VOB at 0x0020de1e
+libdvdread: Elapsed time 0
+libdvdread: Found 2 VTS's
+libdvdread: Elapsed time 1
+libdvdread: Attempting to use device /dev/rdisk2 mounted on /Volumes/HOME for CSS authentication
+[19:27:04] scan: DVD has 5 title(s)
+[19:27:04] scan: scanning title 1
+[19:27:04] scan: duration is 01:42:44 (6164633 ms)
+[19:27:04] pgc_id: 1, pgn: 1: pgc: 0x7f9a7f356280
+[19:27:04] scan: checking audio 1
+[19:27:04] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=1
+[19:27:04] scan: checking audio 2
+[19:27:04] scan: id=0x81bd, lang=español (AC3), 3cc=spa ext=1
+[19:27:04] scan: checking audio 3
+[19:27:04] scan: id=0x82bd, lang=Francais (AC3), 3cc=fra ext=1
+[19:27:04] scan: checking subtitle 1
+[19:27:04] scan: id=0x20bd, lang=English Closed Caption (4:3) [VOBSUB], 3cc=eng ext=5
+[19:27:04] scan: title 1 has 25 chapters
+[19:27:04] scan: chap 1, 226834 ms
+[19:27:04] scan: chap 2, 119500 ms
+[19:27:04] scan: chap 3, 182467 ms
+[19:27:04] scan: chap 4, 159333 ms
+[19:27:04] scan: chap 5, 134300 ms
+[19:27:04] scan: chap 6, 343867 ms
+[19:27:04] scan: chap 7, 340367 ms
+[19:27:04] scan: chap 8, 367500 ms
+[19:27:04] scan: chap 9, 280333 ms
+[19:27:04] scan: chap 10, 312633 ms
+[19:27:04] scan: chap 11, 612466 ms
+[19:27:04] scan: chap 12, 375533 ms
+[19:27:04] scan: chap 13, 348166 ms
+[19:27:04] scan: chap 14, 186367 ms
+[19:27:04] scan: chap 15, 429800 ms
+[19:27:04] scan: chap 16, 89333 ms
+[19:27:04] scan: chap 17, 253500 ms
+[19:27:04] scan: chap 18, 204166 ms
+[19:27:04] scan: chap 19, 188500 ms
+[19:27:04] scan: chap 20, 164834 ms
+[19:27:04] scan: chap 21, 286834 ms
+[19:27:04] scan: chap 22, 265834 ms
+[19:27:04] scan: chap 23, 67834 ms
+[19:27:04] scan: chap 24, 223834 ms
+[19:27:04] scan: chap 25, 500 ms
+[19:27:04] scan: aspect = 4:3
+[19:27:04] scan: scanning title 2
+[19:27:04] scan: duration is 00:02:18 (138367 ms)
+[19:27:04] pgc_id: 1, pgn: 1: pgc: 0x7f9a7f4cf3e0
+[19:27:04] scan: checking audio 1
+[19:27:04] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[19:27:04] scan: title 2 has 2 chapters
+[19:27:04] scan: chap 1, 137867 ms
+[19:27:04] scan: chap 2, 500 ms
+[19:27:04] scan: aspect = 4:3
+[19:27:04] scan: scanning title 3
+[19:27:04] scan: duration is 00:01:14 (74467 ms)
+[19:27:04] pgc_id: 2, pgn: 1: pgc: 0x7f9af9027500
+[19:27:04] scan: checking audio 1
+[19:27:04] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[19:27:04] scan: title 3 has 2 chapters
+[19:27:04] scan: chap 1, 73967 ms
+[19:27:04] scan: chap 2, 500 ms
+[19:27:04] scan: aspect = 4:3
+[19:27:04] scan: scanning title 4
+[19:27:04] scan: duration is 00:01:42 (102500 ms)
+[19:27:04] pgc_id: 3, pgn: 1: pgc: 0x7f9aeeedca10
+[19:27:04] scan: checking audio 1
+[19:27:04] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[19:27:04] scan: title 4 has 2 chapters
+[19:27:04] scan: chap 1, 102000 ms
+[19:27:04] scan: chap 2, 500 ms
+[19:27:04] scan: aspect = 4:3
+[19:27:04] scan: scanning title 5
+[19:27:04] scan: duration is 00:00:00 (500 ms)
+[19:27:04] scan: ignoring title (too short)
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[19:27:10] scan: decoding previews for title 1
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[19:27:11] scan: title angle(s) 1
+[19:27:11] scan: audio 0x82bd: ac3, rate=48000Hz, bitrate=192000 Francais (AC3) (2.0 ch) (192 kbps)
+[19:27:11] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (192 kbps)
+[19:27:11] scan: audio 0x81bd: ac3, rate=48000Hz, bitrate=192000 español (AC3) (2.0 ch) (192 kbps)
+[19:27:13] scan: 10 previews, 720x480, 23.976 fps, autocrop = 56/60/8/4, aspect 4:3, PAR 8:9
+[19:27:13] scan: decoding previews for title 2
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+[19:27:14] scan: title angle(s) 1
+[19:27:14] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (192 kbps)
+[19:27:15] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/2/6/6, aspect 4:3, PAR 8:9
+[19:27:15] scan: decoding previews for title 3
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+[19:27:16] scan: title angle(s) 1
+[19:27:16] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (192 kbps)
+[19:27:17] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/8/6, aspect 4:3, PAR 8:9
+[19:27:17] scan: decoding previews for title 4
+libdvdnav: DVD disk reports itself with Region mask 0x00fe0000. Regions: 1
+libdvdnav: Suspected RCE Region Protection!!!
+[19:27:18] scan: title angle(s) 1
+[19:27:18] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3) (2.0 ch) (192 kbps)
+[19:27:20] scan: 10 previews, 720x480, 23.976 fps, autocrop = 0/0/8/8, aspect 4:3, PAR 8:9
+[19:27:20] libhb: scan thread found 4 valid title(s)
+[19:27:20] macgui: ScanCore scan done
