@@ -48,7 +48,34 @@ module.exports = app => {
 		}).catch(e => {
 			console.error(e);
 			res.send({ success: false });
-		})
+		});
+	});
+
+	app.get('/checkup-all', (req, res) => {
+		let peerStatuses;
+		PeerFetcher.fetchPeerStatuses().then(peerS => {
+			peerStatuses = peerS;
+			return new FileReader().getHBStatusItems();
+		}).then(hostStatus => {
+			peerStatuses.push({
+				hostname: HOST_NAME,
+				status: hostStatus.status,
+				statusText: hostStatus.statusText,
+				startTime: hostStatus.startTime,
+				endTime: hostStatus.endTime,
+				activity: hostStatus.activity,
+				eta: hostStatus.eta,
+				currentEncode: hostStatus.currentEncode
+			});
+
+			res.send({
+				success: true,
+				hostData: peerStatuses
+			});
+		}).catch(e => {
+			console.error(e);
+			res.render('error');
+		});
 	});
 
 	require('./errors')(app);
