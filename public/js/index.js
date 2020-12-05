@@ -9,9 +9,11 @@
 			return;
 
 		requestPromise('/checkup-all', {}, request.METHODS.GET).then(response => {
+			// if we're missing key bits of data, don't bother refreshing
 			if (!response || !response.hostData || typeof response.hostData !== 'object')
 				return;
 
+			// for each bit of host data we get, grab the row that contains the host name and update it
 			response.hostData.forEach(hostMeta => {
 				const row = getHostRow(hostMeta.hostname);
 				if (!row)
@@ -49,6 +51,6 @@
 		}
 	}
 
-	// refresh the page every 5 seconds after loading the page
+	// refresh the page every 10 seconds after loading the page
 	setInterval(reloadTable, 10000)
 })(window);
