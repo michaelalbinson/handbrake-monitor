@@ -20,7 +20,7 @@
 					return;
 
 				// status
-				row.children[1].setAttribute('class', hostMeta.status);
+				row.children[1].children[0].setAttribute('class', 'circle ' + hostMeta.status);
 
 				// status string
 				row.children[2].innerText = hostMeta.statusText;
