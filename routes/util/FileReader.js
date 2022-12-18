@@ -91,17 +91,17 @@ class FileReader {
 	resolveStatus(line) {
 		// by default, the status is the same as it was on the last line
 		let lineStatus = this.status.statusText;
-		if (line.includes(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED))
+		if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.ENCODE_STARTED))
 			lineStatus = STATUS.RIPPING;
-		else if (line.includes(RIP_PROGRESS_CONSTANTS.SCAN_STARTED))
+		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.SCAN_STARTED))
 			lineStatus = STATUS.SCANNING;
-		else if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_SCANNED_READY))
+		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.QUEUE_SCANNED_READY))
 			lineStatus = STATUS.SCAN_COMPLETE;
-		else if (line.includes(RIP_PROGRESS_CONSTANTS.SUB_SCAN_STARTED))
+		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.SUB_SCAN_STARTED))
 			lineStatus = STATUS.RIPPING_SUB_SCAN
-		else if (line.includes(RIP_PROGRESS_CONSTANTS.ENCODING_PASS_STARTED))
+		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.ENCODING_PASS_STARTED))
 			lineStatus = STATUS.RIPPING_ENCODING;
-		else if (line.includes(RIP_PROGRESS_CONSTANTS.QUEUE_COMPLETE))
+		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.QUEUE_COMPLETE))
 			lineStatus = STATUS.QUEUE_COMPLETE;
 
 		switch (lineStatus) {
@@ -111,17 +111,12 @@ class FileReader {
 				break;
 			case STATUS.RIPPING:
 				// bail if this isn't the line that switched us to RIPPING
-				if (!line.includes(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED))
+				if (!FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.ENCODE_STARTED))
 					break;
 
-				const encodeStartedIdx = line.indexOf(RIP_PROGRESS_CONSTANTS.ENCODE_STARTED);
 				this.clearStats();
 				this.status.startTime = line.slice(1, 9);
-				let currentEncode = line.slice(encodeStartedIdx + RIP_PROGRESS_CONSTANTS.ENCODE_STARTED.length);
-				if (currentEncode.endsWith('.m4v') || currentEncode.endsWith('.mp4'))
-					currentEncode = currentEncode.replace('.m4v', '').replace('.mp4', '');
-
-				this.status.currentEncode = currentEncode;
+				this.status.currentEncode = FileReader.getEncodeName(line);
 				break;
 			case STATUS.RIPPING_SUB_SCAN:
 			case STATUS.RIPPING_ENCODING:
@@ -149,7 +144,6 @@ class FileReader {
 		if (status !== STATUS.RIPPING_ENCODING && status !== STATUS.RIPPING_SUB_SCAN)
 			return '';
 
-		//
 		if (this.status.etaEstimators.length < 2)
 			return '~';
 
@@ -210,6 +204,47 @@ class FileReader {
 
 		return String(num);
 	}
+
+	/**
+	 *
+	 * @param line {string}
+	 * @param keyPhrases {string|string[]}
+	 * @returns {boolean|*}
+	 */
+	static lineContains(line, keyPhrases) {
+		if (typeof keyPhrases === 'string')
+			return line.includes(keyPhrases)
+
+		// otherwise, it's an array of key phrases
+		for (let phrase of keyPhrases) {
+			if (line.includes(phrase))
+				return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 *
+	 * @param line {string}
+	 * @returns {string}
+	 */
+	static getEncodeName(line) {
+		for (let phrase of RIP_PROGRESS_CONSTANTS.ENCODE_STARTED) {
+			if (!line.includes(phrase))
+				continue;
+
+			const encodeStartedIdx = line.indexOf(phrase);
+			let currentEncode = line.slice(encodeStartedIdx + phrase.length);
+			if (currentEncode.endsWith('.m4v') || currentEncode.endsWith('.mp4'))
+				currentEncode = currentEncode.replace('.m4v', '').replace('.mp4', '');
+
+			return currentEncode;
+		}
+
+		return 'ERROR';
+	}
+
 }
 
 module.exports = FileReader;

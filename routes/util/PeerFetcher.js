@@ -12,7 +12,8 @@ class PeerFetcher {
 	 */
 	static fetchPeerStatuses() {
 		const responses = [];
-		const promises = config.peers.map(peerURL => {
+
+		const promises = (config.peers || []).map(peerURL => {
 			const destinationURL = peerURL.includes('/checkup') ? peerURL : peerURL + '/checkup';
 			console.log('INFO: Request out to: ' + destinationURL);
 			return fetch(destinationURL)

@@ -137,5 +137,29 @@ describe('FileReader', () => {
 				expect(status.eta).to.equal('');
 			});
 		});
+
+		it('should report status ENCODING for CHUCK_ENCODE', () => {
+			const fr = new FileReader(path.join(__dirname, 'resources', 'CHUCK_ENCODE.log.txt'), getTestDate(0, 44, 0));
+			return fr.getHBStatusItems().then(status => {
+				expect(status.currentEncode).to.equal('CHUCK_S04_E07');
+				expect(status.startTime).to.equal('14:33:24');
+				expect(status.endTime).to.equal('');
+				expect(status.statusText).to.equal(STATUS.RIPPING_ENCODING);
+				expect(status.status).to.equal(REVERSE_STATUS_LOOKUP[STATUS.RIPPING_ENCODING]);
+				expect(status.eta).to.equal('14:01:06'); // this is weird - it shouldn't be so high
+			});
+		});
+
+		it('should report status RIPPING_SUB_SCAN for CHUCK_SCAN', () => {
+			const fr = new FileReader(path.join(__dirname, 'resources', 'CHUCK_SCAN.log.txt'), getTestDate(0, 44, 0));
+			return fr.getHBStatusItems().then(status => {
+				expect(status.currentEncode).to.equal('CHUCK_S04_E08');
+				expect(status.startTime).to.equal('14:44:15');
+				expect(status.endTime).to.equal('');
+				expect(status.statusText).to.equal(STATUS.RIPPING_SUB_SCAN);
+				expect(status.status).to.equal(REVERSE_STATUS_LOOKUP[STATUS.RIPPING_SUB_SCAN]);
+				expect(status.eta).to.equal('~');
+			});
+		});
 	});
 });

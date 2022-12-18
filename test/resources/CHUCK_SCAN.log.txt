@@ -1,0 +1,45 @@
+[14:44:15] Starting work at: Sat Dec 17 14:44:15 2022
+
+[14:44:15] macgui: fr.handbrake.HandBrakeXPCService started encoding CHUCK_S04_E08.mp4
+[14:44:15] 1 job(s) to process
+[14:44:15] macgui: fr.handbrake.HandBrakeXPCService with preset Fast 480p30
+[14:44:15] Starting Task: Subtitle Scan
+[14:44:15] Skipping crop/scale filter
+[14:44:15] job configuration:
+[14:44:15]  * source
+[14:44:15]    + /Volumes/CHUCK_SEASON_4_DISC_2
+[14:44:15]    + title 5, chapter(s) 1 to 9
+[14:44:15]  * destination
+[14:44:15]    + /Users/michaelalbinson/Desktop/net-new/Chuck/Season 4/CHUCK_S04_E08.mp4
+[14:44:15]    + container: MPEG-4 (libavformat)
+[14:44:15]      + align initial A/V stream timestamps
+[14:44:15]      + chapter markers
+[14:44:15]  * video track
+[14:44:15]    + decoder: mpeg2video 8-bit (yuv420p)
+[14:44:15]      + bitrate 200 kbps
+[14:44:15]    + filters
+[14:44:15]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[14:44:15]      + Decomb (mode=39)
+[14:44:15]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[14:44:15]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[14:44:15]    + Output geometry
+[14:44:15]      + storage dimensions: 720 x 480
+[14:44:15]      + pixel aspect ratio: 32 : 27
+[14:44:15]      + display dimensions: 853 x 480
+[14:44:15]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[14:44:15]    + subtitle, English (Wide Screen) [VOBSUB] (track 0, id 0x20bd, Picture)
+[14:44:15]    + subtitle, English (Letterbox) [VOBSUB] (track 1, id 0x21bd, Picture)
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+[14:44:16] sync: expecting 61758 video frames
+[14:48:37] reader: done. 2 scr changes
+[14:48:37] work: average encoding speed for job is 0.000000 fps
+[14:48:37] comb detect: heavy 0 | light 0 | uncombed 0 | total 0
+[14:48:37] decomb: deinterlaced 0 | blended 0 | unfiltered 0 | total 0
+[14:48:37] vfr: 0 frames output, 0 dropped and 0 duped for CFR/PFR
+[14:48:37] vfr: lost time: 0 (0 frames)
+[14:48:37] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[14:48:37] mpeg2video-decoder done: 0 frames, 1 decoder errors
+[14:48:37] sync: got 0 frames, 61758 expected
+[14:48:37] Subtitle track 0 (id 0x20bd) 'English (Wide Screen) [VOBSUB]': 702 hits (0 forced)
+[14:48:37] Subtitle track 1 (id 0x21bd) 'English (Letterbox) [VOBSUB]': 702 hits (0 forced)
+[14:48:37] No candidate detected during subtitle scan

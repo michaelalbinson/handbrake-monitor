@@ -3,13 +3,22 @@
 
 // constants used to grep out the current state of HandBrake
 const RIP_PROGRESS_CONSTANTS = {
-	ENCODE_STARTED:        'QueueCore started encoding ',
-	ENCODE_ENDED:          'QueueCore scan done',
+	ENCODE_STARTED: [
+		'QueueCore started encoding ',
+		'fr.handbrake.HandBrakeXPCService started encoding ',
+	],
+	ENCODE_ENDED: [
+		'QueueCore scan done',
+		'fr.handbrake.HandBrakeXPCService scan done',
+	],
 	SCAN_STARTED:          'ScanCore trying to open a physical disc at',
 	QUEUE_SCANNED_READY:   'ScanCore scan done',
 	ENCODING_PASS_STARTED: 'Starting Task: Encoding Pass',
 	SUB_SCAN_STARTED:      'Starting Task: Subtitle Scan',
-	QUEUE_COMPLETE:        'QueueCore work done'
+	QUEUE_COMPLETE: [
+		'QueueCore work done',
+		'fr.handbrake.HandBrakeXPCService work done'
+	]
 };
 
 const RIP_REGEXPS = {
@@ -28,7 +37,7 @@ const STATUS = {
 	PEER_UNAVAILABLE: '🚨 Peer Unavailable 🚨'
 };
 
-// build a reverse lookup map so you can get the status name from
+// build a reverse lookup map, so you can get the status name from
 const REVERSE_STATUS_LOOKUP = {};
 for (let key in STATUS)
 	REVERSE_STATUS_LOOKUP[STATUS[key]] = key;

@@ -1,0 +1,98 @@
+[14:33:24] Starting work at: Sat Dec 17 14:33:24 2022
+
+[14:33:24] 1 job(s) to process
+[14:33:24] macgui: fr.handbrake.HandBrakeXPCService started encoding CHUCK_S04_E07.mp4
+[14:33:24] macgui: fr.handbrake.HandBrakeXPCService with preset Fast 480p30
+[14:33:24] Starting Task: Subtitle Scan
+[14:33:24] Skipping crop/scale filter
+[14:33:24] job configuration:
+[14:33:24]  * source
+[14:33:24]    + /Volumes/CHUCK_SEASON_4_DISC_2
+[14:33:24]    + title 4, chapter(s) 1 to 9
+[14:33:24]  * destination
+[14:33:24]    + /Users/michaelalbinson/Desktop/net-new/Chuck/Season 4/CHUCK_S04_E07.mp4
+[14:33:24]    + container: MPEG-4 (libavformat)
+[14:33:24]      + align initial A/V stream timestamps
+[14:33:24]      + chapter markers
+[14:33:24]  * video track
+[14:33:24]    + decoder: mpeg2video 8-bit (yuv420p)
+[14:33:24]      + bitrate 200 kbps
+[14:33:24]    + filters
+[14:33:24]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[14:33:24]      + Decomb (mode=39)
+[14:33:24]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[14:33:24]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[14:33:24]    + Output geometry
+[14:33:24]      + storage dimensions: 720 x 480
+[14:33:24]      + pixel aspect ratio: 32 : 27
+[14:33:24]      + display dimensions: 853 x 480
+[14:33:24]  * Foreign Audio Search: Render/Burn-in, Forced Only
+[14:33:24]    + subtitle, English (Wide Screen) [VOBSUB] (track 0, id 0x20bd, Picture)
+[14:33:24]    + subtitle, English (Letterbox) [VOBSUB] (track 1, id 0x21bd, Picture)
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+[14:33:25] sync: expecting 61779 video frames
+[14:38:31] reader: done. 1 scr changes
+[14:38:31] work: average encoding speed for job is 0.000000 fps
+[14:38:31] comb detect: heavy 0 | light 0 | uncombed 0 | total 0
+[14:38:31] decomb: deinterlaced 0 | blended 0 | unfiltered 0 | total 0
+[14:38:31] vfr: 0 frames output, 0 dropped and 0 duped for CFR/PFR
+[14:38:31] vfr: lost time: 0 (0 frames)
+[14:38:31] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[14:38:31] mpeg2video-decoder done: 0 frames, 1 decoder errors
+[14:38:31] sync: got 0 frames, 61779 expected
+[14:38:31] Subtitle track 0 (id 0x20bd) 'English (Wide Screen) [VOBSUB]': 642 hits (0 forced)
+[14:38:31] Subtitle track 1 (id 0x21bd) 'English (Letterbox) [VOBSUB]': 642 hits (0 forced)
+[14:38:31] No candidate detected during subtitle scan
+[14:38:31] Starting Task: Encoding Pass
+[14:38:31] Skipping crop/scale filter
+[14:38:31] job configuration:
+[14:38:31]  * source
+[14:38:31]    + /Volumes/CHUCK_SEASON_4_DISC_2
+[14:38:31]    + title 4, chapter(s) 1 to 9
+[14:38:31]  * destination
+[14:38:31]    + /Users/michaelalbinson/Desktop/net-new/Chuck/Season 4/CHUCK_S04_E07.mp4
+[14:38:31]    + container: MPEG-4 (libavformat)
+[14:38:31]      + align initial A/V stream timestamps
+[14:38:31]      + chapter markers
+[14:38:31]  * video track
+[14:38:31]    + decoder: mpeg2video 8-bit (yuv420p)
+[14:38:31]      + bitrate 200 kbps
+[14:38:31]    + filters
+[14:38:31]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[14:38:31]      + Decomb (mode=39)
+[14:38:31]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[14:38:31]        + frame rate: 23.976 fps -> peak rate limited to 30.000 fps
+[14:38:31]    + Output geometry
+[14:38:31]      + storage dimensions: 720 x 480
+[14:38:31]      + pixel aspect ratio: 32 : 27
+[14:38:31]      + display dimensions: 853 x 480
+[14:38:31]    + encoder: H.264 (libx264)
+[14:38:31]      + preset:  fast
+[14:38:31]      + profile: main
+[14:38:31]      + level:   3.1
+[14:38:31]      + quality: 20.00 (RF)
+[14:38:31]      + color profile: 6-1-6
+[14:38:31]      + chroma location: left
+[14:38:31]  * audio track 1
+[14:38:31]    + decoder: English (AC3) (5.1 ch) (384 kbps) (track 1, id 0x80bd)
+[14:38:31]      + bitrate: 384 kbps, samplerate: 48000 Hz
+[14:38:31]    + mixdown: Stereo
+[14:38:31]    + encoder: AAC (Apple AudioToolbox)
+[14:38:31]      + bitrate: 160 kbps, samplerate: 48000 Hz
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+[14:38:33] sync: expecting 61779 video frames
+[14:38:33] encx264: min-keyint: 24, keyint: 240
+[14:38:33] encx264: encoding at constant RF 20.000000
+[14:38:33] encx264: unparsed options: level=3.1:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=14000:vbv-maxrate=14000:rc-lookahead=30
+x264 [info]: using SAR=32/27
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile Main, level 3.1, 4:2:0, 8-bit
+[14:38:33] sync: first pts video is 0
+[14:38:33] sync: "Chapter 1" (1) at frame 1 time 0
+[14:38:33] sync: first pts audio 0x80bd is 1
+[14:38:38] sync: "Chapter 2" (2) at frame 861 time 3225972
+[14:39:20] sync: "Chapter 3" (3) at frame 8789 time 32982699
+[14:40:24] sync: "Chapter 4" (4) at frame 20144 time 75604278
+[14:41:13] sync: "Chapter 5" (5) at frame 29003 time 108856497
+[14:42:22] sync: "Chapter 6" (6) at frame 41615 time 156195789
+[14:43:28] sync: "Chapter 7" (7) at frame 53687 time 201508807
