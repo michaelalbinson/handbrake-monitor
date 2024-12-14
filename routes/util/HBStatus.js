@@ -29,6 +29,7 @@ const RIP_REGEXPS = {
 const RIP_REGEXPS_V2 = {
 	EXPECTED_FRAME_COUNT: /sync: expecting \d+ video frames/i,
 	CHAPTER_PROGRESS: /sync: "Chapter .* at frame \d+/i,
+	ACTUAL_FRAME_COUNT: /sync: got \d+ frames, \d+ expected/i // may not need this one, but it's interesting
 };
 
 // status types and human-readable text representations

@@ -137,12 +137,7 @@ class LogReader {
 			return '~';
 
 		const etaDates = this.status.etaEstimators.map(est => {
-			const parts = est.slice(1, 9).split(':');
-			const d = new Date();
-			d.setHours(parts[0]);
-			d.setMinutes(parts[1]);
-			d.setSeconds(parts[2]);
-			return d;
+			return ReaderUtil.getDateFromTime(est.slice(1, 9));
 		});
 
 		// calculate the difference between each successful rip notification
@@ -171,17 +166,10 @@ class LogReader {
 		// and subtract the amount of time that elapsed between the time the last estimator was found
 		// and convert from ms -> seconds
 		const avg = (sum / dateDiffs.length);
-		const secondsSinceCheckin = (currentDate - etaDates[etaDates.length - 1]);
-		const timeInSecs = ((avg * numRemainingChapters) - secondsSinceCheckin) / 1000;
+		const msSinceCheckin = (currentDate - etaDates[etaDates.length - 1]);
+		const timeInSecs = ((avg * numRemainingChapters) - msSinceCheckin) / 1000;
 
-		if (timeInSecs < 0)
-			return "Almost done...";
-
-		// break the number of seconds back out into hours:minutes:seconds and return it
-		const hours = Math.floor(timeInSecs / 3600)
-		const minutes = Math.floor((timeInSecs - (hours * 3600)) / 60);
-		const seconds = Math.floor((timeInSecs - (hours * 3600) - (minutes * 60)));
-		return `${ReaderUtil.padWithZeros(hours)}:${ReaderUtil.padWithZeros(minutes)}:${ReaderUtil.padWithZeros(seconds)}`;
+		return ReaderUtil.secondsToFormattedTime(timeInSecs);
 	}
 }
 

@@ -72,6 +72,26 @@ class ReaderUtil {
 
         return defaultStatus;
     }
+
+    static getDateFromTime(stringTime) {
+        const parts = stringTime.split(':');
+        const d = new Date();
+        d.setHours(parts[0]);
+        d.setMinutes(parts[1]);
+        d.setSeconds(parts[2]);
+        return d;
+    }
+
+    static secondsToFormattedTime(timeInSeconds) {
+        if (timeInSeconds < 0)
+            return "Almost done...";
+
+        // break the number of seconds back out into hours:minutes:seconds and return it
+        const hours = Math.floor(timeInSeconds / 3600)
+        const minutes = Math.floor((timeInSeconds - (hours * 3600)) / 60);
+        const seconds = Math.floor((timeInSeconds - (hours * 3600) - (minutes * 60)));
+        return `${ReaderUtil.padWithZeros(hours)}:${ReaderUtil.padWithZeros(minutes)}:${ReaderUtil.padWithZeros(seconds)}`;
+    }
 }
 
 module.exports = ReaderUtil;

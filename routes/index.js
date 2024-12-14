@@ -1,10 +1,19 @@
 'use strict';
 
 const LogReader = require('./util/LogReader');
+const LogReaderV2 = require('./util/LogReaderV2');
 const PeerFetcher = require('./util/PeerFetcher');
+
+const { parseAlgorithm } = require('../config/properties.json');
 
 const HOST_NAME = require('os').hostname().replace('.local', '');
 
+const getParser = () => {
+	if (parseAlgorithm === 1)
+		return new LogReader();
+	else
+		return new LogReaderV2();
+};
 
 module.exports = app => {
 	/* GET home page. */
@@ -12,7 +21,7 @@ module.exports = app => {
 		let peerStatuses;
 		PeerFetcher.fetchPeerStatuses().then(peerS => {
 			peerStatuses = peerS;
-			return new LogReader().getHBStatusItems();
+			return getParser().getHBStatusItems();
 		}).then(hostStatus => {
 			res.render('index', {
 				title: '🍹 | Dashboard',
@@ -33,7 +42,7 @@ module.exports = app => {
 	});
 
 	app.get('/checkup', (req, res) => {
-		new LogReader().getHBStatusItems().then(status => {
+		getParser().getHBStatusItems().then(status => {
 			res.send({
 				success: true,
 				hostname: HOST_NAME,
@@ -55,7 +64,7 @@ module.exports = app => {
 		let peerStatuses;
 		PeerFetcher.fetchPeerStatuses().then(peerS => {
 			peerStatuses = peerS;
-			return new LogReader().getHBStatusItems();
+			return getParser().getHBStatusItems();
 		}).then(hostStatus => {
 			peerStatuses.push({
 				hostname: HOST_NAME,

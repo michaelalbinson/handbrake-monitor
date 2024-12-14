@@ -1,0 +1,89 @@
+[18:26:03] hb_scan: path=/Volumes/DARIA_THE_COMPLETE_SERIES_D1, title_index=49
+disc.c:437: error opening file BDMV/index.bdmv
+disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+[18:26:03] bd: not a bd - trying as a stream/file instead
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+[18:26:04] scan: DVD has 99 title(s)
+[18:26:04] scan: scanning title 49
+[18:26:05] scan: duration is 00:21:33 (1293433 ms)
+[18:26:05] pgc_id: 1, pgn: 1: pgc: 0x1356439c0
+[18:26:05] scan: checking audio 1
+[18:26:05] scan: id=0x80bd, lang=English (AC3), 3cc=eng ext=0
+[18:26:05] scan: title 49 has 6 chapters
+[18:26:05] scan: chap 1, 45967 ms
+[18:26:05] scan: chap 2, 450700 ms
+[18:26:05] scan: chap 3, 318367 ms
+[18:26:05] scan: chap 4, 434800 ms
+[18:26:05] scan: chap 5, 43100 ms
+[18:26:05] scan: chap 6, 500 ms
+[18:26:05] scan: aspect = 4:3
+[18:26:05] scan: decoding previews for title 49
+[18:26:06] scan: title angle(s) 1
+[18:26:06] scan: audio 0x80bd: ac3, rate=48000Hz, bitrate=192000 English (AC3, 2.0 ch, 192 kbps)
+[18:26:08] using bitstream PAR 8:9
+[18:26:08] scan: 10 previews, 720x480, 29.970 fps, autocrop = 2/0/4/10, aspect 4:3, PAR 8:9, color profile: 6-1-6, chroma location: left
+[18:26:08] libhb: scan thread found 1 valid title(s)
+[18:26:08] macgui: fr.handbrake.HandBrakeXPCService scan done
+[18:26:08] macgui: fr.handbrake.HandBrakeXPCService started encoding DARIA_S01_E01.mp4
+[18:26:08] macgui: fr.handbrake.HandBrakeXPCService with preset HQ 480p30 Surround
+[18:26:08] Starting work at: Sat Dec 14 18:26:08 2024
+
+[18:26:08] 1 job(s) to process
+[18:26:08] Starting Task: Encoding Pass
+[18:26:08] job configuration:
+[18:26:08]  * source
+[18:26:08]    + /Volumes/DARIA_THE_COMPLETE_SERIES_D1
+[18:26:08]    + title 49, chapter(s) 1 to 6
+[18:26:08]  * destination
+[18:26:08]    + /Volumes/Crown_King/mvs/net-new-tmp/Rick and Morty/Season 2/DARIA_S01_E01.mp4
+[18:26:08]    + container: MPEG-4 (libavformat)
+[18:26:08]      + align initial A/V stream timestamps
+[18:26:08]      + chapter markers
+[18:26:08]  * video track
+[18:26:08]    + decoder: mpeg2video 8-bit (yuv420p)
+[18:26:08]      + bitrate 200 kbps
+[18:26:08]    + filters
+[18:26:08]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[18:26:08]      + Decomb (mode=39)
+[18:26:08]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[18:26:08]        + frame rate: 29.970 fps -> peak rate limited to 30.000 fps
+[18:26:08]      + Crop and Scale (width=706:height=478:crop-top=2:crop-bottom=0:crop-left=4:crop-right=10)
+[18:26:08]        + source: 720 * 480, crop (2/0/4/10): 706 * 478, scale: 706 * 478
+[18:26:08]    + Output geometry
+[18:26:08]      + storage dimensions: 706 x 478
+[18:26:08]      + pixel aspect ratio: 8 : 9
+[18:26:08]      + display dimensions: 627 x 478
+[18:26:08]    + encoder: H.264 (libx264)
+[18:26:08]      + preset:  slow
+[18:26:08]      + profile: high
+[18:26:08]      + level:   3.1
+[18:26:08]      + quality: 18.00 (RF)
+[18:26:08]      + color profile: 6-1-6
+[18:26:08]      + color range: tv
+[18:26:08]      + chroma location: left
+[18:26:08]  * audio track 1
+[18:26:08]    + decoder: English (AC3, 2.0 ch, 192 kbps) (track 1, id 0x80bd)
+[18:26:08]      + bitrate: 192 kbps, samplerate: 48000 Hz
+[18:26:08]    + mixdown: Stereo
+[18:26:08]    + encoder: AAC (Apple AudioToolbox)
+[18:26:08]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[18:26:08]  * audio track 2
+[18:26:08]    + decoder: English (AC3, 2.0 ch, 192 kbps) (track 1, id 0x80bd)
+[18:26:08]      + bitrate: 192 kbps, samplerate: 48000 Hz
+[18:26:08]    + AC3 Passthru
+libdvdnav: Can't read name block. Probably not a DVD-ROM device.
+[18:26:10] sync: expecting 38764 video frames
+[18:26:10] encx264: min-keyint: 30, keyint: 300
+[18:26:10] encx264: encoding at constant RF 18.000000
+[18:26:10] encx264: unparsed options: level=3.1:ref=5:direct=auto:subme=8:trellis=2:vbv-bufsize=17500:vbv-maxrate=17500:rc-lookahead=50
+x264 [info]: using SAR=8/9
+x264 [info]: using cpu capabilities: ARMv8 NEON
+x264 [info]: profile High, level 3.1, 4:2:0, 8-bit
+libdvdnav: Suspected RCE Region Protection!!!
+libdvdnav: Suspected RCE Region Protection!!!
+[18:26:11] sync: first pts video is 0
+[18:26:11] sync: "Chapter 1" (1) at frame 1 time 0
+[18:26:11] sync: first pts audio 0x80bd is 72072
+[18:26:11] sync: first pts audio 0x80bd is 72072
+[18:26:11] 0.834167s: Film -> Video
+[18:26:23] sync: "Chapter 2" (2) at frame 1244 time 3732729
