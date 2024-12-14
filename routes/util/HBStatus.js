@@ -26,6 +26,11 @@ const RIP_REGEXPS = {
 	TITLE_NUMBER:     /title \d{1,2}, chapter\(s\) 1 to \d{1,2}/i
 };
 
+const RIP_REGEXPS_V2 = {
+	EXPECTED_FRAME_COUNT: /sync: expecting \d+ video frames/i,
+	CHAPTER_PROGRESS: /sync: "Chapter .* at frame \d+/i,
+};
+
 // status types and human-readable text representations
 const STATUS = {
 	QUEUE_COMPLETE:   'Queue Complete - Idle',
@@ -37,7 +42,7 @@ const STATUS = {
 	PEER_UNAVAILABLE: '🚨 Peer Unavailable 🚨'
 };
 
-// build a reverse lookup map, so you can get the status name from
+// build a reverse lookup map, so you can get the status name from the status text
 const REVERSE_STATUS_LOOKUP = {};
 for (let key in STATUS)
 	REVERSE_STATUS_LOOKUP[STATUS[key]] = key;
@@ -46,5 +51,6 @@ module.exports = {
 	STATUS,
 	REVERSE_STATUS_LOOKUP,
 	RIP_PROGRESS_CONSTANTS,
-	RIP_REGEXPS
+	RIP_REGEXPS,
+	RIP_REGEXPS_V2
 };

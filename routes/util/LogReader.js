@@ -7,9 +7,10 @@ const Stream = require('stream');
 
 const { STATUS, RIP_PROGRESS_CONSTANTS, REVERSE_STATUS_LOOKUP, RIP_REGEXPS } = require('./HBStatus');
 const config = require('../../config/properties.json');
+const ReaderUtil = require("./ReaderUtil");
 
 
-class FileReader {
+class LogReader {
 	/**
 	 * Constructor for accepting test seam arguments for test contexts
 	 * @param fileRedirect {string=}
@@ -34,7 +35,7 @@ class FileReader {
 			hbPath = this.testSeam_fileRedirect;
 
 		let inStream = fs.createReadStream(hbPath);
-		return new Promise((resolve, reject)=> {
+		return new Promise((resolve, reject) => {
 			let rl = readline.createInterface(inStream, new Stream());
 
 			this.status = {};
@@ -45,7 +46,7 @@ class FileReader {
 				this.resolveStatus(line);
 			});
 
-			rl.on('error', reject)
+			rl.on('error', reject);
 
 			rl.on('close', () => {
 				this.status.status = REVERSE_STATUS_LOOKUP[this.status.statusText];
@@ -90,19 +91,7 @@ class FileReader {
 	 */
 	resolveStatus(line) {
 		// by default, the status is the same as it was on the last line
-		let lineStatus = this.status.statusText;
-		if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.ENCODE_STARTED))
-			lineStatus = STATUS.RIPPING;
-		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.SCAN_STARTED))
-			lineStatus = STATUS.SCANNING;
-		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.QUEUE_SCANNED_READY))
-			lineStatus = STATUS.SCAN_COMPLETE;
-		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.SUB_SCAN_STARTED))
-			lineStatus = STATUS.RIPPING_SUB_SCAN
-		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.ENCODING_PASS_STARTED))
-			lineStatus = STATUS.RIPPING_ENCODING;
-		else if (FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.QUEUE_COMPLETE))
-			lineStatus = STATUS.QUEUE_COMPLETE;
+		let lineStatus = ReaderUtil.lineToStatus(line, this.status.statusText);
 
 		switch (lineStatus) {
 			case STATUS.SCANNING:
@@ -111,12 +100,12 @@ class FileReader {
 				break;
 			case STATUS.RIPPING:
 				// bail if this isn't the line that switched us to RIPPING
-				if (!FileReader.lineContains(line, RIP_PROGRESS_CONSTANTS.ENCODE_STARTED))
+				if (!ReaderUtil.lineContains(line, RIP_PROGRESS_CONSTANTS.ENCODE_STARTED))
 					break;
 
 				this.clearStats();
 				this.status.startTime = line.slice(1, 9);
-				this.status.currentEncode = FileReader.getEncodeName(line);
+				this.status.currentEncode = ReaderUtil.getEncodeName(line);
 				break;
 			case STATUS.RIPPING_SUB_SCAN:
 			case STATUS.RIPPING_ENCODING:
@@ -192,62 +181,8 @@ class FileReader {
 		const hours = Math.floor(timeInSecs / 3600)
 		const minutes = Math.floor((timeInSecs - (hours * 3600)) / 60);
 		const seconds = Math.floor((timeInSecs - (hours * 3600) - (minutes * 60)));
-		return `${this.padWithZeros(hours)}:${this.padWithZeros(minutes)}:${this.padWithZeros(seconds)}`;
+		return `${ReaderUtil.padWithZeros(hours)}:${ReaderUtil.padWithZeros(minutes)}:${ReaderUtil.padWithZeros(seconds)}`;
 	}
-
-	/**
-	 * Add leading zeros to a number if it is less than 10, otherwise, convert the number to a string and return it
-	 * @param num {number} the number to potentially pad
-	 * @returns {string} the padded, stringified number
-	 */
-	padWithZeros(num) {
-		// allow negatives to pass through, although we shouldn't see any!
-		if (num < 10 && num >= 0)
-			return '0' + num;
-
-		return String(num);
-	}
-
-	/**
-	 *
-	 * @param line {string}
-	 * @param keyPhrases {string|string[]}
-	 * @returns {boolean|*}
-	 */
-	static lineContains(line, keyPhrases) {
-		if (typeof keyPhrases === 'string')
-			return line.includes(keyPhrases)
-
-		// otherwise, it's an array of key phrases
-		for (let phrase of keyPhrases) {
-			if (line.includes(phrase))
-				return true;
-		}
-
-		return false;
-	}
-
-	/**
-	 *
-	 * @param line {string}
-	 * @returns {string}
-	 */
-	static getEncodeName(line) {
-		for (let phrase of RIP_PROGRESS_CONSTANTS.ENCODE_STARTED) {
-			if (!line.includes(phrase))
-				continue;
-
-			const encodeStartedIdx = line.indexOf(phrase);
-			let currentEncode = line.slice(encodeStartedIdx + phrase.length);
-			if (currentEncode.endsWith('.m4v') || currentEncode.endsWith('.mp4'))
-				currentEncode = currentEncode.replace('.m4v', '').replace('.mp4', '');
-
-			return currentEncode;
-		}
-
-		return 'ERROR';
-	}
-
 }
 
-module.exports = FileReader;
+module.exports = LogReader;

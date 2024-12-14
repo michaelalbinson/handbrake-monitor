@@ -1,6 +1,6 @@
 'use strict';
 
-const FileReader = require('./util/FileReader');
+const LogReader = require('./util/LogReader');
 const PeerFetcher = require('./util/PeerFetcher');
 
 const HOST_NAME = require('os').hostname().replace('.local', '');
@@ -12,7 +12,7 @@ module.exports = app => {
 		let peerStatuses;
 		PeerFetcher.fetchPeerStatuses().then(peerS => {
 			peerStatuses = peerS;
-			return new FileReader().getHBStatusItems();
+			return new LogReader().getHBStatusItems();
 		}).then(hostStatus => {
 			res.render('index', {
 				title: '🍹 | Dashboard',
@@ -33,7 +33,7 @@ module.exports = app => {
 	});
 
 	app.get('/checkup', (req, res) => {
-		new FileReader().getHBStatusItems().then(status => {
+		new LogReader().getHBStatusItems().then(status => {
 			res.send({
 				success: true,
 				hostname: HOST_NAME,
@@ -55,7 +55,7 @@ module.exports = app => {
 		let peerStatuses;
 		PeerFetcher.fetchPeerStatuses().then(peerS => {
 			peerStatuses = peerS;
-			return new FileReader().getHBStatusItems();
+			return new LogReader().getHBStatusItems();
 		}).then(hostStatus => {
 			peerStatuses.push({
 				hostname: HOST_NAME,
