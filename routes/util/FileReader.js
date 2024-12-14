@@ -132,7 +132,7 @@ class FileReader {
 	}
 
 	/**
-	 * Calculate the ETA for the current r zip -- so far this is accurate to about 10%, which is about as good as
+	 * Calculate the ETA for the current rip -- so far this is accurate to about 10%, which is about as good as
 	 * HandBrake's underlying estimations.
 	 * @returns {string} The string representing the time remaining in a rip
 	 */
@@ -184,6 +184,9 @@ class FileReader {
 		const avg = (sum / dateDiffs.length);
 		const secondsSinceCheckin = (currentDate - etaDates[etaDates.length - 1]);
 		const timeInSecs = ((avg * numRemainingChapters) - secondsSinceCheckin) / 1000;
+
+		if (timeInSecs < 0)
+			return "Almost done...";
 
 		// break the number of seconds back out into hours:minutes:seconds and return it
 		const hours = Math.floor(timeInSecs / 3600)
