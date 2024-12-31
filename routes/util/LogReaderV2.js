@@ -13,6 +13,8 @@ const config = require('../../config/properties.json');
  * Supersedes FileReader to use a frame-based time estimate instead of a
  */
 class LogReaderV2 {
+    lastRipFramerate = -1;
+
     /**
      * Constructor for accepting test seam arguments for test contexts
      * @param fileRedirect {string=}
@@ -86,6 +88,8 @@ class LogReaderV2 {
             this.status.totalFrames = Number(line.match(/\d+ video/)[0].slice(0, -6).trim()); // take the last two characters, which always contains the number of chapters in an encode
         else if (line.match(RIP_REGEXPS_V2.CHAPTER_PROGRESS))
             this.status.etaEstimators.push(line); // just save the whole line, we'll parse out the times out later
+        else if (line.match(RIP_REGEXPS_V2.LAST_RIP_FRAMERATE))
+            this.lastRipFramerate = Number(line.match(/\d+.?\d+ fps/)[0].split('.')[0])
     }
 
     /**
@@ -137,8 +141,12 @@ class LogReaderV2 {
             return '';
 
         if (this.status.etaEstimators.length < 2)
-            return '~';
+            return this.getLastRipEta();
 
+        return this.getFrameRateEta();
+    }
+
+    getFrameRateEta() {
         const getFrameCount = line => Number(line.match(/frame \d+/)[0].slice(6)); // slice off the word "frame "
 
         // v2 algorithm:
@@ -166,6 +174,20 @@ class LogReaderV2 {
 
         const msSinceCheckin = (currentDate - lastUpdateChapterTime);
         const timeInSecs = ((timePerFrame * remainingFrames) - msSinceCheckin) / 1000;
+        return ReaderUtil.secondsToFormattedTime(timeInSecs);
+    }
+
+    getLastRipEta() {
+        if (this.lastRipFramerate <= 0 || !this.status.totalFrames)
+            return '~';
+
+        // otherwise, take a guess on an eta based on the last rip's average framerate
+        // lastRipFramerate is frames/second
+        const totalTimeInMs = (this.status.totalFrames / this.lastRipFramerate) * 1000;
+        const firstUpdateChapterTime = ReaderUtil.getDateFromTime(this.status.startTime);
+
+        // time left = total estimated time - elapsed time since rip started
+        const timeInSecs = (totalTimeInMs - (new Date() - firstUpdateChapterTime)) / 1000;
         return ReaderUtil.secondsToFormattedTime(timeInSecs);
     }
 }
